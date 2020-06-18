@@ -9,20 +9,23 @@
 /* Begin PBXBuildFile section */
 		C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9297158249B07970038E8A7 /* AppDelegate.swift */; };
 		C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929715A249B07970038E8A7 /* SceneDelegate.swift */; };
-		C929715D249B07970038E8A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929715C249B07970038E8A7 /* ViewController.swift */; };
 		C9297160249B07970038E8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C929715E249B07970038E8A7 /* Main.storyboard */; };
 		C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9297161249B07970038E8A7 /* AnywhereFitness.xcdatamodeld */; };
 		C9297165249B079A0038E8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9297164249B079A0038E8A7 /* Assets.xcassets */; };
 		C9297168249B079A0038E8A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9297166249B079A0038E8A7 /* LaunchScreen.storyboard */; };
 		C9297170249B0C890038E8A7 /* InstructorSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C929716F249B0C890038E8A7 /* InstructorSignUp.storyboard */; };
 		C9297172249B0C990038E8A7 /* ClientSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */; };
+		C9297178249B13090038E8A7 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9297177249B13090038E8A7 /* LandingPageViewController.swift */; };
+		C929717A249B13FF0038E8A7 /* InstructorSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9297179249B13FF0038E8A7 /* InstructorSignUpViewController.swift */; };
+		C929717C249B140C0038E8A7 /* ClientSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929717B249B140C0038E8A7 /* ClientSignUpViewController.swift */; };
+		C929717E249B14CD0038E8A7 /* InstructorSignUpConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929717D249B14CD0038E8A7 /* InstructorSignUpConfirmationViewController.swift */; };
+		C9297180249B14DB0038E8A7 /* ClientSignUpConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929717F249B14DB0038E8A7 /* ClientSignUpConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9297155249B07970038E8A7 /* AnywhereFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnywhereFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9297158249B07970038E8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C929715A249B07970038E8A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C929715C249B07970038E8A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C929715F249B07970038E8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9297162249B07970038E8A7 /* AnywhereFitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnywhereFitness.xcdatamodel; sourceTree = "<group>"; };
 		C9297164249B079A0038E8A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +33,11 @@
 		C9297169249B079A0038E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C929716F249B0C890038E8A7 /* InstructorSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstructorSignUp.storyboard; sourceTree = "<group>"; };
 		C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClientSignUp.storyboard; sourceTree = "<group>"; };
+		C9297177249B13090038E8A7 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		C9297179249B13FF0038E8A7 /* InstructorSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorSignUpViewController.swift; sourceTree = "<group>"; };
+		C929717B249B140C0038E8A7 /* ClientSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpViewController.swift; sourceTree = "<group>"; };
+		C929717D249B14CD0038E8A7 /* InstructorSignUpConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorSignUpConfirmationViewController.swift; sourceTree = "<group>"; };
+		C929717F249B14DB0038E8A7 /* ClientSignUpConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +72,7 @@
 			children = (
 				C9297158249B07970038E8A7 /* AppDelegate.swift */,
 				C929715A249B07970038E8A7 /* SceneDelegate.swift */,
-				C929715C249B07970038E8A7 /* ViewController.swift */,
+				C9297176249B12E30038E8A7 /* View Controllers */,
 				C929715E249B07970038E8A7 /* Main.storyboard */,
 				C9297164249B079A0038E8A7 /* Assets.xcassets */,
 				C9297166249B079A0038E8A7 /* LaunchScreen.storyboard */,
@@ -74,6 +82,18 @@
 				C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */,
 			);
 			path = AnywhereFitness;
+			sourceTree = "<group>";
+		};
+		C9297176249B12E30038E8A7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9297177249B13090038E8A7 /* LandingPageViewController.swift */,
+				C9297179249B13FF0038E8A7 /* InstructorSignUpViewController.swift */,
+				C929717B249B140C0038E8A7 /* ClientSignUpViewController.swift */,
+				C929717D249B14CD0038E8A7 /* InstructorSignUpConfirmationViewController.swift */,
+				C929717F249B14DB0038E8A7 /* ClientSignUpConfirmationViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C929715D249B07970038E8A7 /* ViewController.swift in Sources */,
+				C929717C249B140C0038E8A7 /* ClientSignUpViewController.swift in Sources */,
+				C929717E249B14CD0038E8A7 /* InstructorSignUpConfirmationViewController.swift in Sources */,
 				C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */,
 				C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */,
+				C9297180249B14DB0038E8A7 /* ClientSignUpConfirmationViewController.swift in Sources */,
 				C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */,
+				C929717A249B13FF0038E8A7 /* InstructorSignUpViewController.swift in Sources */,
+				C9297178249B13090038E8A7 /* LandingPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
