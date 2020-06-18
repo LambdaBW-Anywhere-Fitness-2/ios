@@ -14,6 +14,8 @@
 		C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9297161249B07970038E8A7 /* AnywhereFitness.xcdatamodeld */; };
 		C9297165249B079A0038E8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9297164249B079A0038E8A7 /* Assets.xcassets */; };
 		C9297168249B079A0038E8A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9297166249B079A0038E8A7 /* LaunchScreen.storyboard */; };
+		C9297170249B0C890038E8A7 /* InstructorSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C929716F249B0C890038E8A7 /* InstructorSignUp.storyboard */; };
+		C9297172249B0C990038E8A7 /* ClientSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C9297164249B079A0038E8A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9297167249B079A0038E8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9297169249B079A0038E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C929716F249B0C890038E8A7 /* InstructorSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstructorSignUp.storyboard; sourceTree = "<group>"; };
+		C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClientSignUp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				C9297166249B079A0038E8A7 /* LaunchScreen.storyboard */,
 				C9297169249B079A0038E8A7 /* Info.plist */,
 				C9297161249B07970038E8A7 /* AnywhereFitness.xcdatamodeld */,
+				C929716F249B0C890038E8A7 /* InstructorSignUp.storyboard */,
+				C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */,
 			);
 			path = AnywhereFitness;
 			sourceTree = "<group>";
@@ -129,8 +135,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9297168249B079A0038E8A7 /* LaunchScreen.storyboard in Resources */,
+				C9297170249B0C890038E8A7 /* InstructorSignUp.storyboard in Resources */,
 				C9297165249B079A0038E8A7 /* Assets.xcassets in Resources */,
 				C9297160249B07970038E8A7 /* Main.storyboard in Resources */,
+				C9297172249B0C990038E8A7 /* ClientSignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
