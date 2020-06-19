@@ -28,7 +28,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Jbf-oZ-brV" kind="presentation" id="JNe-TM-xkl"/>
+                                            <segue destination="Jbf-oZ-brV" kind="presentation" modalPresentationStyle="automatic" id="JNe-TM-xkl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52M-eX-L9f">
@@ -41,7 +41,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Idk-JO-aQB" kind="presentation" id="Du6-up-tPL"/>
+                                            <segue destination="Idk-JO-aQB" kind="presentation" modalPresentationStyle="automatic" id="Du6-up-tPL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -119,21 +119,81 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oA-PT-n8T">
-                                <rect key="frame" x="179.5" y="406" width="55" height="30"/>
-                                <state key="normal" title="Confirm"/>
+                                <rect key="frame" x="107" y="668" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="X0h-CY-GMr"/>
+                                    <constraint firstAttribute="height" constant="40" id="XgM-gi-9vE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="0.89992465099999996" green="0.89992465099999996" blue="0.89992465099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
+                                    <action selector="confirmButtonTapped:" destination="Idk-JO-aQB" eventType="touchUpInside" id="esx-rm-jRH"/>
                                     <segue destination="k15-r2-HsM" kind="presentation" id="Tqu-Gr-Nmt"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLP-bs-25d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" red="0.89992465099999996" green="0.89992465099999996" blue="0.89992465099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Instructor Sign Up" id="aog-cP-Xfd"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="I7B-Hy-o5f">
+                                <rect key="frame" x="20" y="128" width="374" height="220"/>
+                                <subviews>
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MpZ-tl-Hta">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEr-xN-bSg">
+                                        <rect key="frame" x="0.0" y="59" width="374" height="43.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Authentication Code (hint: 1234)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u8Z-wL-GCt">
+                                        <rect key="frame" x="0.0" y="117.5" width="374" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Website (to confirm credentials)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N4K-G9-x9O">
+                                        <rect key="frame" x="0.0" y="176.5" width="374" height="43.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Iax-Ky-nhr"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="4oA-PT-n8T" firstAttribute="centerY" secondItem="LMq-4y-aom" secondAttribute="centerY" id="1oC-tT-m6m"/>
                             <constraint firstItem="4oA-PT-n8T" firstAttribute="centerX" secondItem="LMq-4y-aom" secondAttribute="centerX" id="A2f-bA-Gam"/>
+                            <constraint firstItem="I7B-Hy-o5f" firstAttribute="top" secondItem="xLP-bs-25d" secondAttribute="bottom" constant="20" id="ARq-hM-FMQ"/>
+                            <constraint firstItem="ghN-Kf-2Pu" firstAttribute="trailing" secondItem="I7B-Hy-o5f" secondAttribute="trailing" constant="20" id="DtC-Ab-YtB"/>
+                            <constraint firstItem="ghN-Kf-2Pu" firstAttribute="bottom" secondItem="4oA-PT-n8T" secondAttribute="bottom" constant="100" id="EmD-Zx-Jth"/>
+                            <constraint firstItem="xLP-bs-25d" firstAttribute="trailing" secondItem="ghN-Kf-2Pu" secondAttribute="trailing" id="Qyr-Wu-bkj"/>
+                            <constraint firstItem="I7B-Hy-o5f" firstAttribute="centerX" secondItem="LMq-4y-aom" secondAttribute="centerX" id="aKK-zI-09R"/>
+                            <constraint firstItem="xLP-bs-25d" firstAttribute="top" secondItem="ghN-Kf-2Pu" secondAttribute="top" id="lSJ-np-fK7"/>
+                            <constraint firstItem="xLP-bs-25d" firstAttribute="leading" secondItem="ghN-Kf-2Pu" secondAttribute="leading" id="nbo-yh-yXB"/>
+                            <constraint firstItem="I7B-Hy-o5f" firstAttribute="leading" secondItem="ghN-Kf-2Pu" secondAttribute="leading" constant="20" id="z3L-9x-qou"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ghN-Kf-2Pu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Instructor Sign Up" id="T8n-Ih-aX0"/>
+                    <connections>
+                        <outlet property="authenticationCodeTextField" destination="u8Z-wL-GCt" id="x2w-G9-EHI"/>
+                        <outlet property="confirmButton" destination="4oA-PT-n8T" id="qDi-4I-U7P"/>
+                        <outlet property="nameTextField" destination="MpZ-tl-Hta" id="EXp-nL-0sb"/>
+                        <outlet property="navBar" destination="xLP-bs-25d" id="dSk-Bk-ZNC"/>
+                        <outlet property="phoneTextField" destination="KEr-xN-bSg" id="r1K-Qi-g56"/>
+                        <outlet property="websiteTextField" destination="N4K-G9-x9O" id="DIK-PK-FJC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q05-BI-jbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,19 +217,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXL-sP-RhK">
-                                <rect key="frame" x="180" y="620" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Confirm"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXL-sP-RhK">
+                                <rect key="frame" x="107" y="668" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.52549019610000003" green="0.84313725490000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Q8W-w0-UOY"/>
+                                    <constraint firstAttribute="height" constant="40" id="tgN-nB-YJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="ckn-6b-8GY" kind="presentation" id="AAV-Oy-HRr"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="2et-9c-kP2">
+                                <rect key="frame" x="20" y="138" width="374" height="180"/>
+                                <subviews>
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JwJ-fu-Nkw">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ZZ-ms-B72">
+                                        <rect key="frame" x="0.0" y="68.5" width="374" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CAk-jn-VEl">
+                                        <rect key="frame" x="0.0" y="136.5" width="374" height="43.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="99K-Gl-hzk"/>
+                                </constraints>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPI-oT-T4L">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Client Sign Up" id="XPL-WR-zJu"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KGg-qX-anc" firstAttribute="bottom" secondItem="IXL-sP-RhK" secondAttribute="bottom" constant="100" id="010-yk-e0G"/>
+                            <constraint firstItem="YPI-oT-T4L" firstAttribute="trailing" secondItem="KGg-qX-anc" secondAttribute="trailing" id="E8e-yL-vFq"/>
+                            <constraint firstItem="IXL-sP-RhK" firstAttribute="centerX" secondItem="0DY-Rh-1nt" secondAttribute="centerX" id="GHW-oC-31q"/>
+                            <constraint firstItem="KGg-qX-anc" firstAttribute="trailing" secondItem="2et-9c-kP2" secondAttribute="trailing" constant="20" id="HJZ-2c-HaQ"/>
+                            <constraint firstItem="YPI-oT-T4L" firstAttribute="leading" secondItem="KGg-qX-anc" secondAttribute="leading" id="Ok6-8d-l1S"/>
+                            <constraint firstItem="2et-9c-kP2" firstAttribute="centerX" secondItem="0DY-Rh-1nt" secondAttribute="centerX" id="WDy-gl-KSo"/>
+                            <constraint firstItem="2et-9c-kP2" firstAttribute="leading" secondItem="KGg-qX-anc" secondAttribute="leading" constant="20" id="aHA-4g-R5H"/>
+                            <constraint firstItem="2et-9c-kP2" firstAttribute="top" secondItem="YPI-oT-T4L" secondAttribute="bottom" constant="30" id="ipJ-Je-dWG"/>
+                            <constraint firstItem="YPI-oT-T4L" firstAttribute="top" secondItem="KGg-qX-anc" secondAttribute="top" id="msz-de-t48"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KGg-qX-anc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Client Sign Up" id="5PY-KO-jW5"/>
+                    <connections>
+                        <outlet property="confirmButton" destination="IXL-sP-RhK" id="GZV-TP-icm"/>
+                        <outlet property="emailTextField" destination="4ZZ-ms-B72" id="2Hu-G5-FOz"/>
+                        <outlet property="nameTextField" destination="JwJ-fu-Nkw" id="3PM-ST-NC4"/>
+                        <outlet property="navBar" destination="YPI-oT-T4L" id="qOt-zb-btP"/>
+                        <outlet property="phoneNumberTextField" destination="CAk-jn-VEl" id="ieK-dX-CsK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8y-Qw-XTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

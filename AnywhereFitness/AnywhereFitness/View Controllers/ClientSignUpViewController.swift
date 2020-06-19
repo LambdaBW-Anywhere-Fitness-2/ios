@@ -10,21 +10,39 @@ import UIKit
 
 class ClientSignUpViewController: UIViewController {
 
+    @IBOutlet weak var navBar: UINavigationBar!
+    @IBOutlet weak var confirmButton: UIButton!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUpViews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setUpViews() {
+        navBar.backgroundColor = .pacificBlue
+        confirmButton.backgroundColor = .pacificBlue
+        confirmButton.layer.cornerRadius = 7
+        
+        nameTextField.becomeFirstResponder()
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        phoneNumberTextField.delegate = self
     }
-    */
 
+}
+
+extension ClientSignUpViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let nextTag = textField.tag + 1
+        
+        if let nextResponder = textField.superview?.viewWithTag(nextTag) {
+            nextResponder.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        return true
+    }
 }

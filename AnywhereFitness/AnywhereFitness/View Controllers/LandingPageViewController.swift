@@ -29,9 +29,9 @@ class LandingPageViewController: UIViewController {
         
         // Buttons
         clientButton.backgroundColor = .pacificBlue
-        clientButton.layer.cornerRadius = clientButton.frame.size.height / 5
+        clientButton.layer.cornerRadius = 5
         instructorButton.backgroundColor = .offWhite
-        instructorButton.layer.cornerRadius = instructorButton.frame.size.height / 5
+        instructorButton.layer.cornerRadius = 5
         
         // Labels
         tagLineLabel.textColor = .pacificBlue
