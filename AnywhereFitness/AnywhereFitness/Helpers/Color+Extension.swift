@@ -14,4 +14,5 @@ extension UIColor {
     static let darkCyan: UIColor = #colorLiteral(red: 0.2862745098, green: 0.5490196078, blue: 0.5411764706, alpha: 1)
     static let kombuGreen: UIColor = #colorLiteral(red: 0.2, green: 0.2784313725, blue: 0.2352941176, alpha: 1)
     static let smokyBlack: UIColor = #colorLiteral(red: 0.05098039216, green: 0.04705882353, blue: 0.03137254902, alpha: 1)
+    static let offWhite: UIColor = #colorLiteral(red: 0.9036304355, green: 0.8982590437, blue: 0.9077596068, alpha: 1)
 }

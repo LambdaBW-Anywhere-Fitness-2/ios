@@ -9,11 +9,32 @@
 import UIKit
 
 class LandingPageViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var landingPageImageView: UIImageView!
+    @IBOutlet weak var tagLineLabel: UILabel!
+    @IBOutlet weak var clientButton: UIButton!
+    @IBOutlet weak var instructorButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setUpViews()
+    }
+    
+    func setUpViews() {
+        // Background Image
+        view.backgroundColor = .smokyBlack
+        landingPageImageView.alpha = 0.2
+        
+        // Buttons
+        clientButton.backgroundColor = .pacificBlue
+        clientButton.layer.cornerRadius = clientButton.frame.size.height / 5
+        instructorButton.backgroundColor = .offWhite
+        instructorButton.layer.cornerRadius = instructorButton.frame.size.height / 5
+        
+        // Labels
+        tagLineLabel.textColor = .pacificBlue
     }
     
 
