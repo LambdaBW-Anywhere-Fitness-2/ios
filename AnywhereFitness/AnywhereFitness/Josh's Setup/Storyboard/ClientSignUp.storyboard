@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qny-Gi-3F8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page View Controller-->
+        <scene sceneID="haY-zY-IIW">
+            <objects>
+                <viewController id="8af-8B-qAO" customClass="HomePageViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q6t-D8-wth">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman-wearing-black-bra-and-pants-on-top-of-the-mountain-963697" translatesAutoresizingMaskIntoConstraints="NO" id="MRM-se-QxE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anywhere Fitness" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVX-jB-Gas">
+                                <rect key="frame" x="20" y="177" width="374" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The World is your gym. Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bo-Pg-O7Z">
+                                <rect key="frame" x="81" y="383" width="252" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MRM-se-QxE" firstAttribute="trailing" secondItem="c9l-Y6-yab" secondAttribute="trailing" id="BEi-bv-a5B"/>
+                            <constraint firstItem="MRM-se-QxE" firstAttribute="top" secondItem="c9l-Y6-yab" secondAttribute="top" id="Kgr-Jn-hXH"/>
+                            <constraint firstItem="MRM-se-QxE" firstAttribute="leading" secondItem="c9l-Y6-yab" secondAttribute="leading" id="bky-7t-5hA"/>
+                            <constraint firstItem="MRM-se-QxE" firstAttribute="bottom" secondItem="c9l-Y6-yab" secondAttribute="bottom" id="dPP-gU-EFo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c9l-Y6-yab"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8f0-fq-Pn7"/>
+                    <connections>
+                        <outlet property="homePageLabel" destination="SVX-jB-Gas" id="sPh-0z-jeH"/>
+                        <outlet property="homePageWelcomeLabel" destination="7Bo-Pg-O7Z" id="Ekk-ms-Zwq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WFf-fs-k6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920.289855072464" y="695.75892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pRm-4a-QLI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3D-cV-Bq0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="te5-jv-tHa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" enabled="NO" title="" id="vGS-eE-QFF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dUm-D9-PXu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8af-8B-qAO" kind="relationship" relationship="rootViewController" id="t0S-vn-tn0"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1010.144927536232" y="695.75892857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aDB-dj-G75">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Qny-Gi-3F8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="5Kd-Qy-eLy">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="te5-jv-tHa" kind="relationship" relationship="viewControllers" id="10X-mi-raS"/>
+                        <segue destination="gJx-oR-D6a" kind="relationship" relationship="viewControllers" id="xbz-UV-fzg"/>
+                        <segue destination="1rO-MG-FLI" kind="relationship" relationship="viewControllers" id="gdE-Xk-ii0"/>
+                        <segue destination="3Ab-td-jAa" kind="relationship" relationship="viewControllers" id="sBg-pi-Kbl"/>
+                        <segue destination="iJr-Td-0jT" kind="relationship" relationship="viewControllers" id="zRj-MJ-tbQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2G-hH-5zQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="695.75892857142856"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="aqs-aB-QoH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favorites" id="1rO-MG-FLI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="jnO-1i-7uj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8S-lQ-H3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="1301"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="frW-z5-bFg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="iJr-Td-0jT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="tCT-oV-n3f"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3t-Mi-Bs2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="363" y="1301"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="9yl-JF-Zit">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="gJx-oR-D6a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="vBz-gY-4xb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJg-bZ-QdZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="1301"/>
+        </scene>
+        <!--Upcoming-->
+        <scene sceneID="lBP-oC-pSg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Upcoming" id="3Ab-td-jAa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="RGV-Nk-YKE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VP2-5h-NcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232" y="1301"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="woman-wearing-black-bra-and-pants-on-top-of-the-mountain-963697" width="3456" height="5184"/>
+    </resources>
+</document>

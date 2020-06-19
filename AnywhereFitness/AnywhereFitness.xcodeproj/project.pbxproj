@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51BCAB86249C56FC004234A5 /* ClassSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCAB85249C56FC004234A5 /* ClassSearchViewController.swift */; };
+		51BCAB96249C7806004234A5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCAB95249C7806004234A5 /* HomePageViewController.swift */; };
+		51BCAB98249C7838004234A5 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCAB97249C7838004234A5 /* Favorites.storyboard */; };
+		51BCAB9A249C785A004234A5 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCAB99249C785A004234A5 /* Search.storyboard */; };
+		51BCAB9C249C7876004234A5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCAB9B249C7876004234A5 /* Profile.storyboard */; };
+		51BCAB9E249C7899004234A5 /* Upcoming.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCAB9D249C7899004234A5 /* Upcoming.storyboard */; };
 		C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9297158249B07970038E8A7 /* AppDelegate.swift */; };
 		C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929715A249B07970038E8A7 /* SceneDelegate.swift */; };
 		C9297160249B07970038E8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C929715E249B07970038E8A7 /* Main.storyboard */; };
@@ -23,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51BCAB85249C56FC004234A5 /* ClassSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchViewController.swift; sourceTree = "<group>"; };
+		51BCAB95249C7806004234A5 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		51BCAB97249C7838004234A5 /* Favorites.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		51BCAB99249C785A004234A5 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		51BCAB9B249C7876004234A5 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		51BCAB9D249C7899004234A5 /* Upcoming.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Upcoming.storyboard; sourceTree = "<group>"; };
 		C9297155249B07970038E8A7 /* AnywhereFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnywhereFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9297158249B07970038E8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C929715A249B07970038E8A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +63,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51BCAB7D249C5519004234A5 /* Josh's Setup */ = {
+			isa = PBXGroup;
+			children = (
+				51BCAB82249C55FD004234A5 /* Views */,
+				51BCAB81249C55D2004234A5 /* Storyboard */,
+				51BCAB80249C5576004234A5 /* Models */,
+				51BCAB7F249C5563004234A5 /* Model Controllers */,
+				51BCAB7E249C552D004234A5 /* View Controllers */,
+			);
+			path = "Josh's Setup";
+			sourceTree = "<group>";
+		};
+		51BCAB7E249C552D004234A5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				51BCAB85249C56FC004234A5 /* ClassSearchViewController.swift */,
+				51BCAB95249C7806004234A5 /* HomePageViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		51BCAB7F249C5563004234A5 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		51BCAB80249C5576004234A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		51BCAB81249C55D2004234A5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */,
+				51BCAB9D249C7899004234A5 /* Upcoming.storyboard */,
+				51BCAB9B249C7876004234A5 /* Profile.storyboard */,
+				51BCAB99249C785A004234A5 /* Search.storyboard */,
+				51BCAB97249C7838004234A5 /* Favorites.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		51BCAB82249C55FD004234A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C929714C249B07970038E8A7 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +136,7 @@
 		C9297157249B07970038E8A7 /* AnywhereFitness */ = {
 			isa = PBXGroup;
 			children = (
+				51BCAB7D249C5519004234A5 /* Josh's Setup */,
 				C9297158249B07970038E8A7 /* AppDelegate.swift */,
 				C929715A249B07970038E8A7 /* SceneDelegate.swift */,
 				C9297176249B12E30038E8A7 /* View Controllers */,
@@ -79,7 +146,6 @@
 				C9297169249B079A0038E8A7 /* Info.plist */,
 				C9297161249B07970038E8A7 /* AnywhereFitness.xcdatamodeld */,
 				C929716F249B0C890038E8A7 /* InstructorSignUp.storyboard */,
-				C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */,
 			);
 			path = AnywhereFitness;
 			sourceTree = "<group>";
@@ -156,7 +222,11 @@
 			files = (
 				C9297168249B079A0038E8A7 /* LaunchScreen.storyboard in Resources */,
 				C9297170249B0C890038E8A7 /* InstructorSignUp.storyboard in Resources */,
+				51BCAB9C249C7876004234A5 /* Profile.storyboard in Resources */,
+				51BCAB98249C7838004234A5 /* Favorites.storyboard in Resources */,
 				C9297165249B079A0038E8A7 /* Assets.xcassets in Resources */,
+				51BCAB9E249C7899004234A5 /* Upcoming.storyboard in Resources */,
+				51BCAB9A249C785A004234A5 /* Search.storyboard in Resources */,
 				C9297160249B07970038E8A7 /* Main.storyboard in Resources */,
 				C9297172249B0C990038E8A7 /* ClientSignUp.storyboard in Resources */,
 			);
@@ -175,7 +245,9 @@
 				C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */,
 				C9297180249B14DB0038E8A7 /* ClientSignUpConfirmationViewController.swift in Sources */,
 				C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */,
+				51BCAB86249C56FC004234A5 /* ClassSearchViewController.swift in Sources */,
 				C929717A249B13FF0038E8A7 /* InstructorSignUpViewController.swift in Sources */,
+				51BCAB96249C7806004234A5 /* HomePageViewController.swift in Sources */,
 				C9297178249B13090038E8A7 /* LandingPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gPA-f4-eCA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anywhere Fitness-->
+        <scene sceneID="ar8-Fh-zCy">
+            <objects>
+                <viewController id="twK-ui-mLC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nPh-s8-cha">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ca5-OB-vks"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Anywhere Fitness" id="W9R-x5-k98"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y4C-rs-nxt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2005.7971014492755" y="1747.7678571428571"/>
+        </scene>
+        <!--Upcoming-->
+        <scene sceneID="FqM-tL-9OU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gPA-f4-eCA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Upcoming" image="calendar" catalog="system" id="4sn-yG-z74"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Da6-zF-I6h">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="twK-ui-mLC" kind="relationship" relationship="rootViewController" id="9og-zi-JQr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGp-xU-M3F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095.6521739130435" y="1747.7678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+    </resources>
+</document>

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "woman-wearing-black-bra-and-pants-on-top-of-the-mountain-963697.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
