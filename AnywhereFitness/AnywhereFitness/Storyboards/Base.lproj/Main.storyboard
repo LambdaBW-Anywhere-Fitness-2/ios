@@ -20,14 +20,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Client"/>
                                 <connections>
-                                    <segue destination="581-rS-ong" kind="presentation" modalPresentationStyle="fullScreen" id="IjN-Cx-NFO"/>
+                                    <segue destination="Jbf-oZ-brV" kind="presentation" id="JNe-TM-xkl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52M-eX-L9f">
                                 <rect key="frame" x="238" y="702" width="67" height="30"/>
                                 <state key="normal" title="Instructor"/>
                                 <connections>
-                                    <segue destination="u6P-6h-ude" kind="presentation" modalPresentationStyle="fullScreen" id="Ry3-Nt-0jt"/>
+                                    <segue destination="Idk-JO-aQB" kind="presentation" id="Du6-up-tPL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,21 +42,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="661" y="153"/>
+            <point key="canvasLocation" x="1564" y="160"/>
         </scene>
         <!--Instructor Sign Up-->
         <scene sceneID="EyJ-8u-YLM">
             <objects>
                 <viewController id="Idk-JO-aQB" customClass="InstructorSignUpViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LMq-4y-aom">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oA-PT-n8T">
-                                <rect key="frame" x="179.5" y="433" width="55" height="30"/>
+                                <rect key="frame" x="179.5" y="406" width="55" height="30"/>
                                 <state key="normal" title="Confirm"/>
                                 <connections>
-                                    <segue destination="6Gw-UG-2ni" kind="show" id="lEA-97-sje"/>
+                                    <segue destination="k15-r2-HsM" kind="presentation" id="Tqu-Gr-Nmt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,35 +73,6 @@
             </objects>
             <point key="canvasLocation" x="2704" y="-195"/>
         </scene>
-        <!--Instructor Sign Up Confirmation View Controller-->
-        <scene sceneID="PFn-ml-lhD">
-            <objects>
-                <viewController id="6Gw-UG-2ni" customClass="InstructorSignUpConfirmationViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gqt-po-Qrd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7Z-Hd-Kuc">
-                                <rect key="frame" x="146.5" y="433" width="121" height="30"/>
-                                <state key="normal" title="Let's Get Started!"/>
-                                <connections>
-                                    <segue destination="k15-r2-HsM" kind="show" id="Nhw-x7-gg9"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="B7Z-Hd-Kuc" firstAttribute="centerX" secondItem="gqt-po-Qrd" secondAttribute="centerX" id="RPV-EH-xs7"/>
-                            <constraint firstItem="B7Z-Hd-Kuc" firstAttribute="centerY" secondItem="gqt-po-Qrd" secondAttribute="centerY" id="WJV-Vb-RuU"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="FLH-Ek-4Wr"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="SZa-MG-s2g"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KJG-N3-to8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3572" y="-195"/>
-        </scene>
         <!--InstructorSignUp-->
         <scene sceneID="DlL-F0-LSJ">
             <objects>
@@ -110,14 +81,14 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hoc-gi-L42" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4366" y="-195"/>
+            <point key="canvasLocation" x="3544" y="-196"/>
         </scene>
         <!--Client Sign Up-->
         <scene sceneID="pSH-Bf-uTT">
             <objects>
                 <viewController id="Jbf-oZ-brV" customClass="ClientSignUpViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0DY-Rh-1nt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXL-sP-RhK">
@@ -125,7 +96,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Confirm"/>
                                 <connections>
-                                    <segue destination="Nqq-ml-lI6" kind="show" id="HI7-Sa-spg"/>
+                                    <segue destination="ckn-6b-8GY" kind="presentation" id="AAV-Oy-HRr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -146,69 +117,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcc-pY-Ohw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4365" y="514"/>
-        </scene>
-        <!--Client Sign Up Confirmation View Controller-->
-        <scene sceneID="w9m-ct-Eza">
-            <objects>
-                <viewController id="Nqq-ml-lI6" customClass="ClientSignUpConfirmationViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sCC-GU-Vgc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fc-8w-Wyy">
-                                <rect key="frame" x="147" y="666" width="121" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Let's Get Started!"/>
-                                <connections>
-                                    <segue destination="ckn-6b-8GY" kind="show" id="TTq-er-PRh"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="4T2-i8-fAF"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="1mr-zi-ATi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iRj-cY-Kbx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3571" y="514"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="hTh-bh-Dkg">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u6P-6h-ude" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="tCp-O3-mLQ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Idk-JO-aQB" kind="relationship" relationship="rootViewController" id="JkF-pd-15G"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nKg-Ov-5NX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1794" y="-195"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="5mH-37-Af4">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="581-rS-ong" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="tMR-sc-Sq0">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Jbf-oZ-brV" kind="relationship" relationship="rootViewController" id="NqT-Ia-f5K"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fqf-bN-bw0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1793" y="514"/>
+            <point key="canvasLocation" x="3543" y="514"/>
         </scene>
     </scenes>
 </document>
