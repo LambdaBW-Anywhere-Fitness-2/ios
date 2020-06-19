@@ -37,9 +37,30 @@ class InstructorSignUpViewController: UIViewController {
     }
 
     @IBAction func confirmButtonTapped(_ sender: UIButton) {
-        print("hey hey")
+        if let name = nameTextField.text,
+            !name.isEmpty,
+            let phoneNumber = phoneTextField.text,
+            !phoneNumber.isEmpty,
+            let authenticationCode = authenticationCodeTextField.text,
+            !authenticationCode.isEmpty,
+            let website = websiteTextField.text,
+            !website.isEmpty {
+            
+            #warning("Create sign up Instructor method")
+            
+        } else {
+            displayAlert()
+            // TODO: - Check what fields are nil and make them the firstResponder
+        }
     }
     
+    func displayAlert() {
+        let alertController = UIAlertController(title: "Missing some information...", message: "Please fill in all fields", preferredStyle: .alert)
+                   let okAction = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+                   okAction.setValue(UIColor.black, forKey: "titleTextColor")
+                   alertController.addAction(okAction)
+                   present(alertController, animated: true, completion: nil)
+    }
     
 }
 

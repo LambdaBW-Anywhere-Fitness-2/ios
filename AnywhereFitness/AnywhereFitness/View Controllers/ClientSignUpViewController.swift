@@ -26,12 +26,37 @@ class ClientSignUpViewController: UIViewController {
         confirmButton.backgroundColor = .pacificBlue
         confirmButton.layer.cornerRadius = 7
         
+        // Form set up
         nameTextField.becomeFirstResponder()
         nameTextField.delegate = self
         emailTextField.delegate = self
         phoneNumberTextField.delegate = self
     }
 
+    @IBAction func confirmButtonTapped(_ sender: UIButton) {
+        if let name = nameTextField.text,
+            !name.isEmpty,
+            let email = emailTextField.text,
+            !email.isEmpty,
+            let phoneNumber = phoneNumberTextField.text,
+            !phoneNumber.isEmpty {
+            
+            #warning("Create sign client up method")
+            
+        } else {
+            displayAlert()
+            // TODO: - Check what fields are nil and make them the firstResponder
+        }
+    }
+    
+    func displayAlert() {
+        let alertController = UIAlertController(title: "Missing some information...", message: "Please fill in all fields", preferredStyle: .alert)
+                   let okAction = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+                   okAction.setValue(UIColor.black, forKey: "titleTextColor")
+                   alertController.addAction(okAction)
+                   present(alertController, animated: true, completion: nil)
+    }
+    
 }
 
 extension ClientSignUpViewController: UITextFieldDelegate {
