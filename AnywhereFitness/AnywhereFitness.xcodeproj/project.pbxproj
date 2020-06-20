@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */; };
 		51BCABA8249DAF44004234A5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCABA7249DAF44004234A5 /* HomePageViewController.swift */; };
+		51BCABAA249DB2C6004234A5 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABA9249DB2C6004234A5 /* Favorites.storyboard */; };
+		51BCABAC249DB2DC004234A5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABAB249DB2DC004234A5 /* Profile.storyboard */; };
+		51BCABAE249DB2FA004234A5 /* Upcoming.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABAD249DB2FA004234A5 /* Upcoming.storyboard */; };
+		51BCABB0249DB311004234A5 /* ClassSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABAF249DB311004234A5 /* ClassSearch.storyboard */; };
 		C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9297158249B07970038E8A7 /* AppDelegate.swift */; };
 		C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929715A249B07970038E8A7 /* SceneDelegate.swift */; };
 		C9297160249B07970038E8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C929715E249B07970038E8A7 /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 /* Begin PBXFileReference section */
 		51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchViewController.swift; sourceTree = "<group>"; };
 		51BCABA7249DAF44004234A5 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		51BCABA9249DB2C6004234A5 /* Favorites.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		51BCABAB249DB2DC004234A5 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		51BCABAD249DB2FA004234A5 /* Upcoming.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Upcoming.storyboard; sourceTree = "<group>"; };
+		51BCABAF249DB311004234A5 /* ClassSearch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassSearch.storyboard; sourceTree = "<group>"; };
 		C9297155249B07970038E8A7 /* AnywhereFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnywhereFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9297158249B07970038E8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C929715A249B07970038E8A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */,
+				51BCABAF249DB311004234A5 /* ClassSearch.storyboard */,
+				51BCABAD249DB2FA004234A5 /* Upcoming.storyboard */,
+				51BCABAB249DB2DC004234A5 /* Profile.storyboard */,
+				51BCABA9249DB2C6004234A5 /* Favorites.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -231,8 +243,12 @@
 			files = (
 				C9297168249B079A0038E8A7 /* LaunchScreen.storyboard in Resources */,
 				C9297170249B0C890038E8A7 /* InstructorSignUp.storyboard in Resources */,
+				51BCABAA249DB2C6004234A5 /* Favorites.storyboard in Resources */,
 				C9297165249B079A0038E8A7 /* Assets.xcassets in Resources */,
+				51BCABAE249DB2FA004234A5 /* Upcoming.storyboard in Resources */,
+				51BCABB0249DB311004234A5 /* ClassSearch.storyboard in Resources */,
 				C9297160249B07970038E8A7 /* Main.storyboard in Resources */,
+				51BCABAC249DB2DC004234A5 /* Profile.storyboard in Resources */,
 				C9297172249B0C990038E8A7 /* ClientSignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
