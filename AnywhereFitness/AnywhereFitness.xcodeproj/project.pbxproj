@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */; };
+		51BCABA8249DAF44004234A5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCABA7249DAF44004234A5 /* HomePageViewController.swift */; };
 		C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9297158249B07970038E8A7 /* AppDelegate.swift */; };
 		C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929715A249B07970038E8A7 /* SceneDelegate.swift */; };
 		C9297160249B07970038E8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C929715E249B07970038E8A7 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchViewController.swift; sourceTree = "<group>"; };
+		51BCABA7249DAF44004234A5 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		C9297155249B07970038E8A7 /* AnywhereFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnywhereFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9297158249B07970038E8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C929715A249B07970038E8A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51BCAB9F249DAEAE004234A5 /* Josh's Setup */ = {
+			isa = PBXGroup;
+			children = (
+				51BCABA4249DAEEF004234A5 /* View Controllers */,
+				51BCABA3249DAEE6004234A5 /* Model Controllers */,
+				51BCABA2249DAEDD004234A5 /* Models */,
+				51BCABA1249DAECF004234A5 /* Storyboards */,
+				51BCABA0249DAEC6004234A5 /* Views */,
+			);
+			path = "Josh's Setup";
+			sourceTree = "<group>";
+		};
+		51BCABA0249DAEC6004234A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51BCABA1249DAECF004234A5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		51BCABA2249DAEDD004234A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		51BCABA3249DAEE6004234A5 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		51BCABA4249DAEEF004234A5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */,
+				51BCABA7249DAF44004234A5 /* HomePageViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		C929714C249B07970038E8A7 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +122,7 @@
 		C9297157249B07970038E8A7 /* AnywhereFitness */ = {
 			isa = PBXGroup;
 			children = (
+				51BCAB9F249DAEAE004234A5 /* Josh's Setup */,
 				C9297169249B079A0038E8A7 /* Info.plist */,
 				C9297164249B079A0038E8A7 /* Assets.xcassets */,
 				C9297161249B07970038E8A7 /* AnywhereFitness.xcdatamodeld */,
@@ -92,7 +147,6 @@
 		C9297181249C478C0038E8A7 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */,
 				C929716F249B0C890038E8A7 /* InstructorSignUp.storyboard */,
 				C9297166249B079A0038E8A7 /* LaunchScreen.storyboard */,
 				C929715E249B07970038E8A7 /* Main.storyboard */,
@@ -192,9 +246,11 @@
 			files = (
 				C929717C249B140C0038E8A7 /* ClientSignUpViewController.swift in Sources */,
 				C9297184249C48FF0038E8A7 /* Color+Extension.swift in Sources */,
+				51BCABA8249DAF44004234A5 /* HomePageViewController.swift in Sources */,
 				C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */,
 				C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */,
 				C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */,
+				51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */,
 				C929717A249B13FF0038E8A7 /* InstructorSignUpViewController.swift in Sources */,
 				C9297178249B13090038E8A7 /* LandingPageViewController.swift in Sources */,
 			);
