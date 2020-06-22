@@ -24,6 +24,8 @@
 		C929718C24A033250038E8A7 /* ClientRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929718B24A033250038E8A7 /* ClientRepresentation.swift */; };
 		C929718E24A035E80038E8A7 /* InstructorRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929718D24A035E80038E8A7 /* InstructorRepresentation.swift */; };
 		C929719024A036530038E8A7 /* Instructor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929718F24A036530038E8A7 /* Instructor+Convenience.swift */; };
+		C929719224A0384E0038E8A7 /* Client+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719124A0384E0038E8A7 /* Client+Codable.swift */; };
+		C929719424A039030038E8A7 /* Instructor+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719324A039030038E8A7 /* Instructor+Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		C929718B24A033250038E8A7 /* ClientRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRepresentation.swift; sourceTree = "<group>"; };
 		C929718D24A035E80038E8A7 /* InstructorRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorRepresentation.swift; sourceTree = "<group>"; };
 		C929718F24A036530038E8A7 /* Instructor+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instructor+Convenience.swift"; sourceTree = "<group>"; };
+		C929719124A0384E0038E8A7 /* Client+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Client+Codable.swift"; sourceTree = "<group>"; };
+		C929719324A039030038E8A7 /* Instructor+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instructor+Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +135,11 @@
 			isa = PBXGroup;
 			children = (
 				C9297161249B07970038E8A7 /* AnywhereFitness.xcdatamodeld */,
+				C929719124A0384E0038E8A7 /* Client+Codable.swift */,
 				C929718924A031400038E8A7 /* Client+Convencience.swift */,
 				C929718B24A033250038E8A7 /* ClientRepresentation.swift */,
 				C929718724A030460038E8A7 /* CoreDataStack.swift */,
+				C929719324A039030038E8A7 /* Instructor+Codable.swift */,
 				C929718F24A036530038E8A7 /* Instructor+Convenience.swift */,
 				C929718D24A035E80038E8A7 /* InstructorRepresentation.swift */,
 			);
@@ -218,11 +224,13 @@
 				C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */,
 				C929718E24A035E80038E8A7 /* InstructorRepresentation.swift in Sources */,
 				C929719024A036530038E8A7 /* Instructor+Convenience.swift in Sources */,
+				C929719224A0384E0038E8A7 /* Client+Codable.swift in Sources */,
 				C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */,
 				C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */,
 				C929718C24A033250038E8A7 /* ClientRepresentation.swift in Sources */,
 				C929717A249B13FF0038E8A7 /* InstructorSignUpViewController.swift in Sources */,
 				C9297178249B13090038E8A7 /* LandingPageViewController.swift in Sources */,
+				C929719424A039030038E8A7 /* Instructor+Codable.swift in Sources */,
 				C929718824A030460038E8A7 /* CoreDataStack.swift in Sources */,
 				C929718A24A031400038E8A7 /* Client+Convencience.swift in Sources */,
 			);
