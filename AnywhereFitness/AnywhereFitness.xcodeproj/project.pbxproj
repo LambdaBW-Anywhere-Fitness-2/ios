@@ -19,6 +19,9 @@
 		C929717A249B13FF0038E8A7 /* InstructorSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9297179249B13FF0038E8A7 /* InstructorSignUpViewController.swift */; };
 		C929717C249B140C0038E8A7 /* ClientSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929717B249B140C0038E8A7 /* ClientSignUpViewController.swift */; };
 		C9297184249C48FF0038E8A7 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9297183249C48FF0038E8A7 /* Color+Extension.swift */; };
+		C929718824A030460038E8A7 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929718724A030460038E8A7 /* CoreDataStack.swift */; };
+		C929718A24A031400038E8A7 /* Client+Convencience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929718924A031400038E8A7 /* Client+Convencience.swift */; };
+		C929718C24A033250038E8A7 /* ClientRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929718B24A033250038E8A7 /* ClientRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		C9297179249B13FF0038E8A7 /* InstructorSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorSignUpViewController.swift; sourceTree = "<group>"; };
 		C929717B249B140C0038E8A7 /* ClientSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpViewController.swift; sourceTree = "<group>"; };
 		C9297183249C48FF0038E8A7 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		C929718724A030460038E8A7 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C929718924A031400038E8A7 /* Client+Convencience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Client+Convencience.swift"; sourceTree = "<group>"; };
+		C929718B24A033250038E8A7 /* ClientRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +76,7 @@
 			children = (
 				C9297169249B079A0038E8A7 /* Info.plist */,
 				C9297164249B079A0038E8A7 /* Assets.xcassets */,
-				C9297161249B07970038E8A7 /* AnywhereFitness.xcdatamodeld */,
+				C929718624A030350038E8A7 /* Models */,
 				C9297185249C49040038E8A7 /* Helpers */,
 				C9297182249C47F50038E8A7 /* Resources */,
 				C9297181249C478C0038E8A7 /* Storyboards */,
@@ -115,6 +121,17 @@
 				C9297183249C48FF0038E8A7 /* Color+Extension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C929718624A030350038E8A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9297161249B07970038E8A7 /* AnywhereFitness.xcdatamodeld */,
+				C929718924A031400038E8A7 /* Client+Convencience.swift */,
+				C929718B24A033250038E8A7 /* ClientRepresentation.swift */,
+				C929718724A030460038E8A7 /* CoreDataStack.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +212,11 @@
 				C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */,
 				C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */,
 				C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */,
+				C929718C24A033250038E8A7 /* ClientRepresentation.swift in Sources */,
 				C929717A249B13FF0038E8A7 /* InstructorSignUpViewController.swift in Sources */,
 				C9297178249B13090038E8A7 /* LandingPageViewController.swift in Sources */,
+				C929718824A030460038E8A7 /* CoreDataStack.swift in Sources */,
+				C929718A24A031400038E8A7 /* Client+Convencience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
