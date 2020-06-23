@@ -9,6 +9,9 @@
 import UIKit
 
 class ClientSignUpViewController: UIViewController {
+    
+    // MARK: - Properties
+    var networkController: NetworkController?
 
     @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var confirmButton: UIButton!

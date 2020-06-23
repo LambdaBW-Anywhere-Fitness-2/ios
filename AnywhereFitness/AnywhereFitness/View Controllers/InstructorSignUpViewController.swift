@@ -9,14 +9,17 @@
 import UIKit
 
 class InstructorSignUpViewController: UIViewController {
+    
+    // MARK: - Properties
+    var networkController: NetworkController?
 
     // MARK: - Outlets
     @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var phoneTextField: UITextField!
-    @IBOutlet weak var authenticationCodeTextField: UITextField!
-    @IBOutlet weak var websiteTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordCodeTextField: UITextField!
+    @IBOutlet weak var roleIDTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,22 +34,28 @@ class InstructorSignUpViewController: UIViewController {
         // form set up
         nameTextField.becomeFirstResponder()
         nameTextField.delegate = self
-        phoneTextField.delegate = self
-        authenticationCodeTextField.delegate = self
-        websiteTextField.delegate = self
+        emailTextField.delegate = self
+        passwordCodeTextField.delegate = self
+        roleIDTextField.delegate = self
     }
 
     @IBAction func confirmButtonTapped(_ sender: UIButton) {
         if let name = nameTextField.text,
             !name.isEmpty,
-            let phoneNumber = phoneTextField.text,
-            !phoneNumber.isEmpty,
-            let authenticationCode = authenticationCodeTextField.text,
-            !authenticationCode.isEmpty,
-            let website = websiteTextField.text,
-            !website.isEmpty {
+            let email = emailTextField.text,
+            !email.isEmpty,
+            let password = passwordCodeTextField.text,
+            !password.isEmpty,
+            let roleID = roleIDTextField.text,
+            !roleID.isEmpty {
             
-            #warning("Create sign up Instructor method")
+            let instructor = Instructor(name: name, email: email, password: password, roleID: roleID)
+            networkController?.signUpAsInstructor(with: instructor, completion: { error in
+                guard error == nil else {
+                    NSLog("Error signing up Instructor: \(error!)")
+                    return
+                }
+            })
             
         } else {
             displayAlert()
