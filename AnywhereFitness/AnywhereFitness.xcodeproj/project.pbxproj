@@ -32,6 +32,8 @@
 		C929719024A036530038E8A7 /* Instructor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929718F24A036530038E8A7 /* Instructor+Convenience.swift */; };
 		C929719224A0384E0038E8A7 /* Client+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719124A0384E0038E8A7 /* Client+Codable.swift */; };
 		C929719424A039030038E8A7 /* Instructor+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719324A039030038E8A7 /* Instructor+Codable.swift */; };
+		C929719A24A192520038E8A7 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719924A192520038E8A7 /* NetworkController.swift */; };
+		C929719C24A194860038E8A7 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719B24A194860038E8A7 /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		C929718F24A036530038E8A7 /* Instructor+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instructor+Convenience.swift"; sourceTree = "<group>"; };
 		C929719124A0384E0038E8A7 /* Client+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Client+Codable.swift"; sourceTree = "<group>"; };
 		C929719324A039030038E8A7 /* Instructor+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instructor+Codable.swift"; sourceTree = "<group>"; };
+		C929719924A192520038E8A7 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		C929719B24A194860038E8A7 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +154,9 @@
 				51BCAB9F249DAEAE004234A5 /* Josh's Setup */,
 				C9297169249B079A0038E8A7 /* Info.plist */,
 				C9297164249B079A0038E8A7 /* Assets.xcassets */,
-				C929718624A030350038E8A7 /* Models */,
 				C9297185249C49040038E8A7 /* Helpers */,
+				C929719824A192380038E8A7 /* Model Controllers */,
+				C929718624A030350038E8A7 /* Models */,
 				C9297182249C47F50038E8A7 /* Resources */,
 				C9297181249C478C0038E8A7 /* Storyboards */,
 				C9297176249B12E30038E8A7 /* View Controllers */,
@@ -208,8 +213,17 @@
 				C929719324A039030038E8A7 /* Instructor+Codable.swift */,
 				C929718F24A036530038E8A7 /* Instructor+Convenience.swift */,
 				C929718D24A035E80038E8A7 /* InstructorRepresentation.swift */,
+				C929719B24A194860038E8A7 /* Token.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C929719824A192380038E8A7 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C929719924A192520038E8A7 /* NetworkController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C929719A24A192520038E8A7 /* NetworkController.swift in Sources */,
 				C929717C249B140C0038E8A7 /* ClientSignUpViewController.swift in Sources */,
 				C9297184249C48FF0038E8A7 /* Color+Extension.swift in Sources */,
 				51BCABA8249DAF44004234A5 /* HomePageViewController.swift in Sources */,
@@ -296,6 +311,7 @@
 				C929718E24A035E80038E8A7 /* InstructorRepresentation.swift in Sources */,
 				C929719024A036530038E8A7 /* Instructor+Convenience.swift in Sources */,
 				C929719224A0384E0038E8A7 /* Client+Codable.swift in Sources */,
+				C929719C24A194860038E8A7 /* Token.swift in Sources */,
 				C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */,
 				C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */,
 				51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */,
