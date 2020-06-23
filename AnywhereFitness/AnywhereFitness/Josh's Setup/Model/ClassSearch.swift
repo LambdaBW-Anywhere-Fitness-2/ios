@@ -7,7 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 struct ClassSearch {
-    
+    var image: UIImage
+    var className: String
+
+    init(className: String, imageName: String) {
+        self.className = className
+        self.image = UIImage(named: imageName)!
+    }
 }
