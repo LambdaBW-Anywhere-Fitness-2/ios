@@ -1,5 +1,5 @@
 //
-//  Token.swift
+//  UserLogin.swift
 //  AnywhereFitness
 //
 //  Created by Matthew Martindale on 6/22/20.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-struct Token: Codable {
-    let token: String
+struct UserLogin: Codable {
+    var email: String
+    var password: String
 }
