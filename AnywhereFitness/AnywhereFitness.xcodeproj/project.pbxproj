@@ -15,6 +15,8 @@
 		51BCABB0249DB311004234A5 /* ClassSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABAF249DB311004234A5 /* ClassSearch.storyboard */; };
 		51E5CF3A24A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3924A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift */; };
 		51E5CF3C24A1A574005CDCE8 /* ClassSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3B24A1A574005CDCE8 /* ClassSearch.swift */; };
+		51E5CF3E24A1A865005CDCE8 /* ClassSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3D24A1A865005CDCE8 /* ClassSearchController.swift */; };
+		51E5CF4024A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */; };
 		C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9297158249B07970038E8A7 /* AppDelegate.swift */; };
 		C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929715A249B07970038E8A7 /* SceneDelegate.swift */; };
 		C9297160249B07970038E8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C929715E249B07970038E8A7 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		51BCABAF249DB311004234A5 /* ClassSearch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassSearch.storyboard; sourceTree = "<group>"; };
 		51E5CF3924A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		51E5CF3B24A1A574005CDCE8 /* ClassSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearch.swift; sourceTree = "<group>"; };
+		51E5CF3D24A1A865005CDCE8 /* ClassSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchController.swift; sourceTree = "<group>"; };
+		51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchCollectionViewController.swift; sourceTree = "<group>"; };
 		C9297155249B07970038E8A7 /* AnywhereFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnywhereFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9297158249B07970038E8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C929715A249B07970038E8A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,10 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				51E5CF3824A1A539005CDCE8 /* Model Controller */,
-				51E5CF3724A1A52A005CDCE8 /* Model */,
-				51E5CF3524A1A512005CDCE8 /* Views */,
 				51BCABA4249DAEEF004234A5 /* View Controllers */,
 				51BCABA1249DAECF004234A5 /* Storyboards */,
+				51E5CF3724A1A52A005CDCE8 /* Model */,
+				51E5CF3524A1A512005CDCE8 /* Views */,
 			);
 			path = "Josh's Setup";
 			sourceTree = "<group>";
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				51E5CF3924A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift */,
+				51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 		51E5CF3824A1A539005CDCE8 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				51E5CF3D24A1A865005CDCE8 /* ClassSearchController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -323,6 +329,8 @@
 				C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */,
 				51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */,
 				C929718C24A033250038E8A7 /* ClientRepresentation.swift in Sources */,
+				51E5CF3E24A1A865005CDCE8 /* ClassSearchController.swift in Sources */,
+				51E5CF4024A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift in Sources */,
 				C929717A249B13FF0038E8A7 /* InstructorSignUpViewController.swift in Sources */,
 				C9297178249B13090038E8A7 /* LandingPageViewController.swift in Sources */,
 				51E5CF3C24A1A574005CDCE8 /* ClassSearch.swift in Sources */,
