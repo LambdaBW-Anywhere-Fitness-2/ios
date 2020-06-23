@@ -10,6 +10,8 @@ import UIKit
 
 class LandingPageViewController: UIViewController {
     
+    // MARK: - Properties
+    let networkController = NetworkController()
     
     @IBOutlet weak var landingPageImageView: UIImageView!
     @IBOutlet weak var tagLineLabel: UILabel!
@@ -38,14 +40,12 @@ class LandingPageViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "InstructorSignUpSegue" {
+            let instructorSignUpVC = segue.destination as! InstructorSignUpViewController
+            instructorSignUpVC.networkController = networkController
+        }
     }
-    */
 
 }
