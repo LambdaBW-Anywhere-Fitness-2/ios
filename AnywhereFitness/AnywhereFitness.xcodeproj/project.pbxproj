@@ -83,7 +83,6 @@
 		51BCABA1249DAECF004234A5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */,
 				51BCABAF249DB311004234A5 /* ClassSearch.storyboard */,
 				51BCABAD249DB2FA004234A5 /* Upcoming.storyboard */,
 				51BCABAB249DB2DC004234A5 /* Profile.storyboard */,
@@ -149,6 +148,7 @@
 		C9297176249B12E30038E8A7 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C9297171249B0C990038E8A7 /* ClientSignUp.storyboard */,
 				C929717B249B140C0038E8A7 /* ClientSignUpViewController.swift */,
 				C9297179249B13FF0038E8A7 /* InstructorSignUpViewController.swift */,
 				C9297177249B13090038E8A7 /* LandingPageViewController.swift */,
