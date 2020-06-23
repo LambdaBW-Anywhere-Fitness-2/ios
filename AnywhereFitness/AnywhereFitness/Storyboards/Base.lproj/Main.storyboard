@@ -28,7 +28,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Jbf-oZ-brV" kind="presentation" modalPresentationStyle="automatic" id="JNe-TM-xkl"/>
+                                            <segue destination="Jbf-oZ-brV" kind="presentation" identifier="ClientSignUpSegue" modalPresentationStyle="automatic" id="JNe-TM-xkl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52M-eX-L9f">
@@ -41,7 +41,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Idk-JO-aQB" kind="presentation" modalPresentationStyle="automatic" id="Du6-up-tPL"/>
+                                            <segue destination="Idk-JO-aQB" kind="presentation" identifier="InstructorSignUpSegue" modalPresentationStyle="automatic" id="Du6-up-tPL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -150,17 +150,17 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEr-xN-bSg">
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEr-xN-bSg">
                                         <rect key="frame" x="0.0" y="59" width="374" height="43.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="tel"/>
                                     </textField>
-                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Authentication Code (hint: 1234)*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u8Z-wL-GCt">
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u8Z-wL-GCt">
                                         <rect key="frame" x="0.0" y="117.5" width="374" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Website (to confirm credentials)*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N4K-G9-x9O">
+                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Authentication Code (hint: 1234)*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N4K-G9-x9O">
                                         <rect key="frame" x="0.0" y="176.5" width="374" height="43.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -187,12 +187,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Instructor Sign Up" id="T8n-Ih-aX0"/>
                     <connections>
-                        <outlet property="authenticationCodeTextField" destination="u8Z-wL-GCt" id="x2w-G9-EHI"/>
                         <outlet property="confirmButton" destination="4oA-PT-n8T" id="qDi-4I-U7P"/>
+                        <outlet property="emailTextField" destination="KEr-xN-bSg" id="y82-38-4bs"/>
                         <outlet property="nameTextField" destination="MpZ-tl-Hta" id="EXp-nL-0sb"/>
                         <outlet property="navBar" destination="xLP-bs-25d" id="dSk-Bk-ZNC"/>
-                        <outlet property="phoneTextField" destination="KEr-xN-bSg" id="r1K-Qi-g56"/>
-                        <outlet property="websiteTextField" destination="N4K-G9-x9O" id="DIK-PK-FJC"/>
+                        <outlet property="passwordCodeTextField" destination="u8Z-wL-GCt" id="oYa-co-5by"/>
+                        <outlet property="roleIDTextField" destination="N4K-G9-x9O" id="8FF-Ev-Niw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q05-BI-jbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -93,6 +93,7 @@ class NetworkController {
                 completion(.badResponse)
                 return
             }
+            print("Successfully signed up")
             completion(nil)
         }
         dataTask.resume()
