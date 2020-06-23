@@ -36,6 +36,7 @@
 		C929719424A039030038E8A7 /* Instructor+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719324A039030038E8A7 /* Instructor+Codable.swift */; };
 		C929719A24A192520038E8A7 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719924A192520038E8A7 /* NetworkController.swift */; };
 		C929719C24A194860038E8A7 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719B24A194860038E8A7 /* Token.swift */; };
+		C929719E24A1A5ED0038E8A7 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719D24A1A5ED0038E8A7 /* UserLogin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		C929719324A039030038E8A7 /* Instructor+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instructor+Codable.swift"; sourceTree = "<group>"; };
 		C929719924A192520038E8A7 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		C929719B24A194860038E8A7 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		C929719D24A1A5ED0038E8A7 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 				C929718F24A036530038E8A7 /* Instructor+Convenience.swift */,
 				C929718D24A035E80038E8A7 /* InstructorRepresentation.swift */,
 				C929719B24A194860038E8A7 /* Token.swift */,
+				C929719D24A1A5ED0038E8A7 /* UserLogin.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				C929719424A039030038E8A7 /* Instructor+Codable.swift in Sources */,
 				C929718824A030460038E8A7 /* CoreDataStack.swift in Sources */,
 				C929718A24A031400038E8A7 /* Client+Convencience.swift in Sources */,
+				C929719E24A1A5ED0038E8A7 /* UserLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
