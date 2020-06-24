@@ -67,6 +67,9 @@ class LandingPageViewController: UIViewController {
                         self.displayLogInSuccessAlert()
                     }
                     print(credentials)
+                    
+                    #warning("segue to correct View Controller depending if they logged in as client or instructor")
+                    
                 case .failure(let error):
                     DispatchQueue.main.async {
                         self.displayLogInErrorAlert()
