@@ -53,7 +53,15 @@ class InstructorSignUpViewController: UIViewController {
             networkController?.signUpAsInstructor(with: instructor, completion: { error in
                 guard error == nil else {
                     NSLog("Error signing up Instructor: \(error!)")
+                    // Displays alert that there was an error signing up
+                    DispatchQueue.main.async {
+                        self.displaySignInErrorAlert()
+                    }
                     return
+                }
+                // Displays alert that they successfully signed up
+                DispatchQueue.main.async {
+                    self.displaySignedInAlert()
                 }
             })
             
@@ -61,6 +69,24 @@ class InstructorSignUpViewController: UIViewController {
             displayAlert()
             // TODO: - Check what fields are nil and make them the firstResponder
         }
+    }
+    
+    func displaySignedInAlert() {
+        let alertController = UIAlertController(title: "Signed In Successful!", message: "Please log in with email and password", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Okay", style: .cancel, handler: { action in
+            self.dismiss(animated: true, completion: nil)
+        })
+                   okAction.setValue(UIColor.black, forKey: "titleTextColor")
+                   alertController.addAction(okAction)
+                   present(alertController, animated: true, completion: nil)
+    }
+    
+    func displaySignInErrorAlert() {
+        let alertController = UIAlertController(title: "Error signing in!", message: "Please try again", preferredStyle: .alert)
+                   let okAction = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+                   okAction.setValue(UIColor.black, forKey: "titleTextColor")
+                   alertController.addAction(okAction)
+                   present(alertController, animated: true, completion: nil)
     }
     
     func displayAlert() {

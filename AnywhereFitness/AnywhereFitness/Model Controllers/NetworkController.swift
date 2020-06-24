@@ -21,14 +21,12 @@ enum NetworkError: Error {
     case noData
     case noDecode
     case noEncode
-    case noRep
     case badResponse
 }
 
 class NetworkController {
     
     let baseURL: URL = URL(string: "https://anywherefitnessapp.herokuapp.com/api")!
-    var token: Token?
     
     func signUpAsClient(with client: Client, completion: @escaping (NetworkError?) -> Void) {
         let signUpURL = baseURL.appendingPathComponent("/signup/client")
@@ -105,8 +103,8 @@ class NetworkController {
         dataTask.resume()
     }
     
-    func logIn(with user: UserLogin, completion: @escaping (Result<Token, NetworkError>) -> Void) {
-        let loginURL = baseURL.appendingPathComponent("")
+    func logIn(with user: UserLogin, completion: @escaping (Result<Credentials, NetworkError>) -> Void) {
+        let loginURL = baseURL.appendingPathComponent("signin")
         
         var request = URLRequest(url: loginURL)
         request.httpMethod = HTTPMethod.post.rawValue
@@ -128,8 +126,10 @@ class NetworkController {
                 return
             }
             
-            if let response = response as? HTTPURLResponse,
-            response.statusCode != 200 {
+            guard let response = response as? HTTPURLResponse else { return }
+            let statusCode = response.statusCode
+            let goodNetworkRange = 200...299
+            if !goodNetworkRange.contains(statusCode) {
                 NSLog("Bad network response, status code:\(response.statusCode)")
                 completion(.failure(.badResponse))
                 return
@@ -142,8 +142,8 @@ class NetworkController {
             
             let jsonDecoder = JSONDecoder()
             do {
-                let token = try jsonDecoder.decode(Token.self, from: data)
-                completion(.success(token))
+                let credentials = try jsonDecoder.decode(Credentials.self, from: data)
+                completion(.success(credentials))
             } catch {
                 NSLog("Error decoding token: \(error)")
                 completion(.failure(.noDecode))
