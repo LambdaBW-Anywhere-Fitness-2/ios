@@ -45,6 +45,9 @@ class LandingPageViewController: UIViewController {
         if segue.identifier == "InstructorSignUpSegue" {
             let instructorSignUpVC = segue.destination as! InstructorSignUpViewController
             instructorSignUpVC.networkController = networkController
+        } else if segue.identifier == "ClientSignUpSegue" {
+            let clientSignUpVC = segue.destination as! ClientSignUpViewController
+            clientSignUpVC.networkController = networkController
         }
     }
 

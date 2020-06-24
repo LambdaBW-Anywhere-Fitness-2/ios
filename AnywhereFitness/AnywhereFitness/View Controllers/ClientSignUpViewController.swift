@@ -17,7 +17,7 @@ class ClientSignUpViewController: UIViewController {
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class ClientSignUpViewController: UIViewController {
         nameTextField.becomeFirstResponder()
         nameTextField.delegate = self
         emailTextField.delegate = self
-        phoneNumberTextField.delegate = self
+        passwordTextField.delegate = self
     }
 
     @IBAction func confirmButtonTapped(_ sender: UIButton) {
@@ -41,10 +41,16 @@ class ClientSignUpViewController: UIViewController {
             !name.isEmpty,
             let email = emailTextField.text,
             !email.isEmpty,
-            let phoneNumber = phoneNumberTextField.text,
-            !phoneNumber.isEmpty {
+            let password = passwordTextField.text,
+            !password.isEmpty {
             
-            #warning("Create sign client up method")
+            let client = Client(name: name, email: email, password: password)
+            networkController?.signUpAsClient(with: client, completion: { (error) in
+                guard error == nil else {
+                    NSLog("Error signing up Client: \(error!)")
+                    return
+                }
+            })
             
         } else {
             displayAlert()
