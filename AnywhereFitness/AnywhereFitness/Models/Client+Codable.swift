@@ -15,14 +15,12 @@ extension Client: Encodable {
         try container.encode(name, forKey: .name)
         try container.encode(email, forKey: .email)
         try container.encode(password, forKey: .password)
-        try container.encode(identifier, forKey: .identifier)
     }
     
     enum CodingKeys: String, CodingKey {
         case name
         case email
         case password
-        case identifier
     }
     
 }

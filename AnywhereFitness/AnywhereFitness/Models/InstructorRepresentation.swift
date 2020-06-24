@@ -13,5 +13,4 @@ struct InstructorRepresentation {
     var email: String
     var password: String
     var roleID: String
-    var identifier: String
 }

@@ -12,5 +12,4 @@ struct ClientRepresentation {
     var name: String
     var email: String
     var password: String
-    var identifier: String
 }
