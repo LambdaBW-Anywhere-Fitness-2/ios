@@ -63,8 +63,14 @@ class LandingPageViewController: UIViewController {
             networkController.logIn(with: userLogin) { result in
                 switch result {
                 case .success(let credentials):
+                    DispatchQueue.main.async {
+                        self.displayLogInSuccessAlert()
+                    }
                     print(credentials)
                 case .failure(let error):
+                    DispatchQueue.main.async {
+                        self.displayLogInErrorAlert()
+                    }
                     switch error {
                     case .noIdentifier:
                         print("No Identifier")
@@ -83,6 +89,24 @@ class LandingPageViewController: UIViewController {
             }
             
         }
+    }
+    
+    func displayLogInSuccessAlert() {
+        let alertController = UIAlertController(title: "Logged In Successful!", message: "Welcome back", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Okay", style: .cancel, handler: { action in
+            self.dismiss(animated: true, completion: nil)
+        })
+                   okAction.setValue(UIColor.black, forKey: "titleTextColor")
+                   alertController.addAction(okAction)
+                   present(alertController, animated: true, completion: nil)
+    }
+    
+    func displayLogInErrorAlert() {
+        let alertController = UIAlertController(title: "Error logging in!", message: "Please try again", preferredStyle: .alert)
+                   let okAction = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+                   okAction.setValue(UIColor.black, forKey: "titleTextColor")
+                   alertController.addAction(okAction)
+                   present(alertController, animated: true, completion: nil)
     }
     
     func initHideKeyboardGesture() {
