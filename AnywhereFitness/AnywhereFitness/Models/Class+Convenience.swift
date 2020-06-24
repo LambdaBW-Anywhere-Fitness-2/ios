@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 enum ClassType: String, CaseIterable {
-    case yoga, boxing, pilates, weightlifting
+    case yoga, running, boxing, weightlifting, dancing, biking
 }
 
 enum Intensity: String, CaseIterable {

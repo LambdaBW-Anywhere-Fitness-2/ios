@@ -46,13 +46,13 @@
         <!--Create-->
         <scene sceneID="dSy-WI-JkI">
             <objects>
-                <viewController id="yok-St-yf8" sceneMemberID="viewController">
+                <viewController id="yok-St-yf8" customClass="CreateClassViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6N6-h5-Fx1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tHr-yb-xDV">
-                                <rect key="frame" x="20" y="64" width="374" height="554.5"/>
+                                <rect key="frame" x="20" y="160" width="374" height="554.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RmU-gN-T3v">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="62.5"/>
@@ -171,16 +171,48 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zzz-MU-x0N">
+                                <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                                <items>
+                                    <navigationItem title="Create New Class" id="PIK-55-Di7"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="tHr-yb-xDV" firstAttribute="top" secondItem="zzz-MU-x0N" secondAttribute="bottom" constant="20" id="Jbk-76-LIp"/>
+                            <constraint firstItem="zzz-MU-x0N" firstAttribute="leading" secondItem="7M7-l8-O1m" secondAttribute="leading" id="apG-4K-dgv"/>
                             <constraint firstItem="tHr-yb-xDV" firstAttribute="leading" secondItem="7M7-l8-O1m" secondAttribute="leading" constant="20" id="gZo-uv-5bA"/>
-                            <constraint firstItem="tHr-yb-xDV" firstAttribute="top" secondItem="7M7-l8-O1m" secondAttribute="top" constant="20" id="nJS-K2-Les"/>
+                            <constraint firstItem="zzz-MU-x0N" firstAttribute="top" secondItem="7M7-l8-O1m" secondAttribute="top" id="mPb-8y-IcV"/>
+                            <constraint firstItem="zzz-MU-x0N" firstAttribute="trailing" secondItem="7M7-l8-O1m" secondAttribute="trailing" id="rig-KW-gv6"/>
                             <constraint firstItem="7M7-l8-O1m" firstAttribute="trailing" secondItem="tHr-yb-xDV" secondAttribute="trailing" constant="20" id="sNM-36-SW1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7M7-l8-O1m"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Create" image="plus.rectangle.fill" catalog="system" id="UDf-Pp-05k"/>
+                    <toolbarItems>
+                        <barButtonItem systemItem="cancel" id="E9r-ha-djl">
+                            <connections>
+                                <action selector="cancelTapped:" destination="yok-St-yf8" id="9Ne-EM-Qcp"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="CJ2-eo-3Pf"/>
+                        <barButtonItem systemItem="save" id="K3A-sJ-gcA">
+                            <connections>
+                                <action selector="saveTapped:" destination="yok-St-yf8" id="ctq-Ou-t7e"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="durationTextField" destination="1na-UF-lkX" id="iEr-a4-Ayb"/>
+                        <outlet property="intensityControl" destination="GDQ-Cd-SzK" id="nFH-VI-HuV"/>
+                        <outlet property="locationTextField" destination="JXP-N8-mQ1" id="IHw-Vv-K3M"/>
+                        <outlet property="maxSizeTextField" destination="PqE-ed-JcE" id="Li8-WO-V5a"/>
+                        <outlet property="nameTextField" destination="Pk1-MK-3CW" id="aMM-d3-BxH"/>
+                        <outlet property="startTextField" destination="A9L-dD-uhS" id="Q5L-ve-FAb"/>
+                        <outlet property="typeTextField" destination="hGv-0U-HqN" id="gLG-e1-BIz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdc-DA-hQU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

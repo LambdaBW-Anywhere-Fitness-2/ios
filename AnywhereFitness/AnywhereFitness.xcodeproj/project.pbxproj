@@ -21,6 +21,7 @@
 		61C43FC724A3C09B00D0473F /* Class+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FC624A3C09B00D0473F /* Class+Convenience.swift */; };
 		61C43FC924A3C0B000D0473F /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FC824A3C0B000D0473F /* ClassRepresentation.swift */; };
 		61C43FCB24A3C0C400D0473F /* Class+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FCA24A3C0C400D0473F /* Class+Codable.swift */; };
+		61C43FCD24A3E28D00D0473F /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FCC24A3E28D00D0473F /* CreateClassViewController.swift */; };
 		C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9297158249B07970038E8A7 /* AppDelegate.swift */; };
 		C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929715A249B07970038E8A7 /* SceneDelegate.swift */; };
 		C9297160249B07970038E8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C929715E249B07970038E8A7 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		61C43FC624A3C09B00D0473F /* Class+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Convenience.swift"; sourceTree = "<group>"; };
 		61C43FC824A3C0B000D0473F /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
 		61C43FCA24A3C0C400D0473F /* Class+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Codable.swift"; sourceTree = "<group>"; };
+		61C43FCC24A3E28D00D0473F /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
 		C9297155249B07970038E8A7 /* AnywhereFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnywhereFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9297158249B07970038E8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C929715A249B07970038E8A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				C929717B249B140C0038E8A7 /* ClientSignUpViewController.swift */,
 				C9297179249B13FF0038E8A7 /* InstructorSignUpViewController.swift */,
 				C9297177249B13090038E8A7 /* LandingPageViewController.swift */,
+				61C43FCC24A3E28D00D0473F /* CreateClassViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				C929717A249B13FF0038E8A7 /* InstructorSignUpViewController.swift in Sources */,
 				C9297178249B13090038E8A7 /* LandingPageViewController.swift in Sources */,
 				51E5CF3C24A1A574005CDCE8 /* ClassSearch.swift in Sources */,
+				61C43FCD24A3E28D00D0473F /* CreateClassViewController.swift in Sources */,
 				C929719424A039030038E8A7 /* Instructor+Codable.swift in Sources */,
 				C929718824A030460038E8A7 /* CoreDataStack.swift in Sources */,
 				C929718A24A031400038E8A7 /* Client+Convencience.swift in Sources */,
