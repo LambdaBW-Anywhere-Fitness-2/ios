@@ -12,7 +12,6 @@ private let reuseIdentifier = "ClassSearchCell"
 
 class ClassSearchViewController: UIViewController {
 
-    let classSearchController = ClassSearchController()
 
     override func viewDidLoad() {
         super.viewDidLoad()

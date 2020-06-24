@@ -15,34 +15,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing_page" translatesAutoresizingMaskIntoConstraints="NO" id="Rqb-ll-K53">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="landing_page" translatesAutoresizingMaskIntoConstraints="NO" id="Rqb-ll-K53">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlm-hE-774">
-                                <rect key="frame" x="20" y="168" width="374" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The world is your gym. Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huz-Yh-Qck">
-                                <rect key="frame" x="20" y="347" width="374" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ALV-8u-qcH">
+                                <rect key="frame" x="20" y="191" width="374" height="88"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Anywhere" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlm-hE-774">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Fitness" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvr-Jj-HYu">
+                                        <rect key="frame" x="0.0" y="48" width="374" height="40"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="The world is your gym. Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huz-Yh-Qck">
+                                <rect key="frame" x="20" y="371" width="374" height="70"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Rqb-ll-K53" firstAttribute="leading" secondItem="7pJ-LI-oci" secondAttribute="leading" id="7WR-ws-wLx"/>
-                            <constraint firstItem="Rqb-ll-K53" firstAttribute="top" secondItem="7pJ-LI-oci" secondAttribute="top" id="Wi2-lO-eFr"/>
-                            <constraint firstItem="7pJ-LI-oci" firstAttribute="trailing" secondItem="Rqb-ll-K53" secondAttribute="trailing" id="fKt-4n-MzA"/>
-                            <constraint firstItem="7pJ-LI-oci" firstAttribute="bottom" secondItem="Rqb-ll-K53" secondAttribute="bottom" id="p5y-tC-iWH"/>
+                            <constraint firstItem="7pJ-LI-oci" firstAttribute="trailing" secondItem="huz-Yh-Qck" secondAttribute="trailing" constant="20" id="0Zz-2n-fcg"/>
+                            <constraint firstItem="ALV-8u-qcH" firstAttribute="top" secondItem="7pJ-LI-oci" secondAttribute="top" constant="103" id="Hu6-NJ-ix5"/>
+                            <constraint firstItem="7pJ-LI-oci" firstAttribute="trailing" secondItem="ALV-8u-qcH" secondAttribute="trailing" constant="20" id="Kpb-Uk-Osa"/>
+                            <constraint firstItem="huz-Yh-Qck" firstAttribute="top" secondItem="ALV-8u-qcH" secondAttribute="bottom" constant="92" id="SEQ-Pn-bUO"/>
+                            <constraint firstItem="7pJ-LI-oci" firstAttribute="bottom" secondItem="huz-Yh-Qck" secondAttribute="bottom" constant="372" id="eGC-kx-KlT"/>
+                            <constraint firstItem="huz-Yh-Qck" firstAttribute="leading" secondItem="7pJ-LI-oci" secondAttribute="leading" constant="20" id="rOx-eI-vI2"/>
+                            <constraint firstItem="ALV-8u-qcH" firstAttribute="leading" secondItem="7pJ-LI-oci" secondAttribute="leading" constant="20" id="vce-3Q-9Vl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7pJ-LI-oci"/>
                     </view>
                     <navigationItem key="navigationItem" id="IAP-C6-TtU"/>
+                    <connections>
+                        <outlet property="homePageImageView" destination="Rqb-ll-K53" id="2jx-y4-4ds"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oyt-4X-6YP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
