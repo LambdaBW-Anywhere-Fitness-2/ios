@@ -2,19 +2,17 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E266" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Client" representedClassName="Client" syncable="YES" codeGenerationType="class">
         <attribute name="email" attributeType="String"/>
-        <attribute name="identifier" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="password" attributeType="String"/>
     </entity>
     <entity name="Instructor" representedClassName="Instructor" syncable="YES" codeGenerationType="class">
         <attribute name="email" attributeType="String"/>
-        <attribute name="identifier" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="password" attributeType="String"/>
         <attribute name="roleID" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Client" positionX="-54" positionY="-9" width="128" height="103"/>
-        <element name="Instructor" positionX="-36" positionY="9" width="128" height="118"/>
+        <element name="Client" positionX="-54" positionY="-9" width="128" height="88"/>
+        <element name="Instructor" positionX="-36" positionY="9" width="128" height="103"/>
     </elements>
 </model>

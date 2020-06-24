@@ -53,12 +53,15 @@ class NetworkController {
                 return
             }
             
-            if let response = response as? HTTPURLResponse,
-                response.statusCode != 200 {
+            guard let response = response as? HTTPURLResponse else { return }
+            let statusCode = response.statusCode
+            let goodNetworkRange = 200...299
+            if !goodNetworkRange.contains(statusCode) {
                 NSLog("Bad network response, status code:\(response.statusCode)")
                 completion(.badResponse)
                 return
             }
+            print("Successfully signed up")
             completion(nil)
         }
         dataTask.resume()
@@ -87,12 +90,15 @@ class NetworkController {
                 return
             }
             
-            if let response = response as? HTTPURLResponse,
-                response.statusCode != 200 {
+            guard let response = response as? HTTPURLResponse else { return }
+            let statusCode = response.statusCode
+            let goodNetworkRange = 200...299
+            if !goodNetworkRange.contains(statusCode) {
                 NSLog("Bad network response, status code:\(response.statusCode)")
                 completion(.badResponse)
                 return
             }
+            
             print("Successfully signed up")
             completion(nil)
         }

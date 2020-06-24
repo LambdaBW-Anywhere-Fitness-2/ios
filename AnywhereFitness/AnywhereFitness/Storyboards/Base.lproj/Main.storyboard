@@ -246,7 +246,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="tel"/>
                                     </textField>
-                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CAk-jn-VEl">
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CAk-jn-VEl">
                                         <rect key="frame" x="0.0" y="136.5" width="374" height="43.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -286,7 +286,7 @@
                         <outlet property="emailTextField" destination="4ZZ-ms-B72" id="2Hu-G5-FOz"/>
                         <outlet property="nameTextField" destination="JwJ-fu-Nkw" id="3PM-ST-NC4"/>
                         <outlet property="navBar" destination="YPI-oT-T4L" id="qOt-zb-btP"/>
-                        <outlet property="phoneNumberTextField" destination="CAk-jn-VEl" id="ieK-dX-CsK"/>
+                        <outlet property="passwordTextField" destination="CAk-jn-VEl" id="H0M-KL-QN6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8y-Qw-XTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -15,7 +15,6 @@ extension Instructor {
         email: String,
         password: String,
         roleID: String,
-        identifier: UUID = UUID(),
         context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         
         self.init(context: context)
@@ -24,18 +23,14 @@ extension Instructor {
         self.email = email
         self.password = password
         self.roleID = roleID
-        self.identifier = identifier
     }
     
     @discardableResult convenience init?(instructorRepresentation: InstructorRepresentation, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
-        
-        guard let identifier = UUID(uuidString: instructorRepresentation.identifier) else { return nil }
         
         self.init(name: instructorRepresentation.name,
                   email: instructorRepresentation.email,
                   password: instructorRepresentation.password,
                   roleID: instructorRepresentation.roleID,
-                  identifier: identifier,
                   context: context)
     }
     
@@ -45,13 +40,10 @@ extension Instructor {
             let password = password,
             let roleID = roleID else { return nil }
         
-        let id = identifier ?? UUID()
-        
         return InstructorRepresentation(name: name,
                                         email: email,
                                         password: password,
-                                        roleID: roleID,
-                                        identifier: id.uuidString)
+                                        roleID: roleID)
     }
     
 }

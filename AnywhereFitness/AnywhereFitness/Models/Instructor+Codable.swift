@@ -16,7 +16,6 @@ extension Instructor: Encodable {
         try container.encode(email, forKey: .email)
         try container.encode(password, forKey: .password)
         try container.encode(roleID, forKey: .roleID)
-        try container.encode(identifier, forKey: .identifier)
     }
     
     enum CodingKeys: String, CodingKey {
@@ -24,7 +23,6 @@ extension Instructor: Encodable {
         case email
         case password
         case roleID = "role_id"
-        case identifier
     }
     
 }
