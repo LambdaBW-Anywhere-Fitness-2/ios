@@ -8,6 +8,12 @@
 
 import Foundation
 
-struct Token: Codable {
+struct Credentials: Codable {
     let token: String
+    let roleID: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case token
+        case roleID = "role_id"
+    }
 }
