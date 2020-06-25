@@ -29,6 +29,11 @@ class LandingPageViewController: UIViewController {
         initHideKeyboardGesture()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        checkForCredentials()
+    }
+    
     func setUpViews() {
         // Background Image
         view.backgroundColor = .smokyBlack
@@ -53,6 +58,27 @@ class LandingPageViewController: UIViewController {
         passwordTextField.delegate = self
     }
     
+    func checkForCredentials() {
+        let defaults = UserDefaults.standard
+        guard defaults.string(forKey: "Token") != nil else { return }
+        let roleID = defaults.integer(forKey: "RoleID")
+        
+        print(roleID)
+        
+        switch roleID {
+        case 1:
+            let clientStoryboard = UIStoryboard(name: "ClientSignUp", bundle: nil)
+            let clientVC = clientStoryboard.instantiateViewController(identifier: "clientVC")
+            self.present(clientVC, animated: true, completion: nil)
+        case 123:
+            let instructorStoryboard = UIStoryboard(name: "InstructorSignUp", bundle: nil)
+            let instructorVC = instructorStoryboard.instantiateViewController(identifier: "instructorVC")
+            self.present(instructorVC, animated: true, completion: nil)
+        default:
+            NSLog("Error: invalid roleID provided")
+        }
+    }
+    
     @IBAction func logInButtonTapped(_ sender: UIButton) {
         if let email = emailTextField.text,
             !email.isEmpty,
@@ -67,6 +93,12 @@ class LandingPageViewController: UIViewController {
                     
                     // Check whether they logged in as client or instructor with the 'roleID'
                     let roleID = credentials.roleID
+                    
+                    // Save token to User Defaults
+                    let token = credentials.token
+                    let defaults = UserDefaults.standard
+                    defaults.set(token, forKey: "Token")
+                    defaults.set(roleID, forKey: "RoleID")
                     
                     DispatchQueue.main.async {
                         switch roleID {
