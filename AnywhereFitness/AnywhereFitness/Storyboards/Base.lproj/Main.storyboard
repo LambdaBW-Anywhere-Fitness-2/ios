@@ -251,16 +251,6 @@
             </objects>
             <point key="canvasLocation" x="2704" y="-195"/>
         </scene>
-        <!--InstructorSignUp-->
-        <scene sceneID="DlL-F0-LSJ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="InstructorSignUp" id="k15-r2-HsM" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="zbQ-q1-1Xm"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hoc-gi-L42" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3544" y="-196"/>
-        </scene>
         <!--Client Sign Up-->
         <scene sceneID="pSH-Bf-uTT">
             <objects>
@@ -343,16 +333,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8y-Qw-XTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2703" y="514"/>
-        </scene>
-        <!--ClientSignUp-->
-        <scene sceneID="Hym-Lz-vNS">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ClientSignUp" id="ckn-6b-8GY" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="DD5-EN-zai"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fcc-pY-Ohw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3543" y="514"/>
         </scene>
     </scenes>
     <resources>
