@@ -63,10 +63,26 @@ class LandingPageViewController: UIViewController {
             networkController.logIn(with: userLogin) { result in
                 switch result {
                 case .success(let credentials):
-                    DispatchQueue.main.async {
-                        self.displayLogInSuccessAlert()
-                    }
                     print(credentials)
+                    
+                    // Check whether they logged in as client or instructor with the 'roleID'
+                    let roleID = credentials.roleID
+                    
+                    DispatchQueue.main.async {
+                        switch roleID {
+                        case 1:
+                            let clientStoryboard = UIStoryboard(name: "ClientSignUp", bundle: nil)
+                            let clientVC = clientStoryboard.instantiateViewController(identifier: "clientVC")
+                            self.present(clientVC, animated: true, completion: nil)
+                        case 123:
+                            let instructorStoryboard = UIStoryboard(name: "InstructorSignUp", bundle: nil)
+                            let instructorVC = instructorStoryboard.instantiateViewController(identifier: "instructorVC")
+                            self.present(instructorVC, animated: true, completion: nil)
+                        default:
+                            NSLog("Error: invalid roleID provided")
+                        }
+                    }
+                    
                 case .failure(let error):
                     DispatchQueue.main.async {
                         self.displayLogInErrorAlert()
