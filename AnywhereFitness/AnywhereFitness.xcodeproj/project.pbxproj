@@ -44,7 +44,18 @@
 		C929719A24A192520038E8A7 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719924A192520038E8A7 /* NetworkController.swift */; };
 		C929719C24A194860038E8A7 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719B24A194860038E8A7 /* Credentials.swift */; };
 		C929719E24A1A5ED0038E8A7 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719D24A1A5ED0038E8A7 /* UserLogin.swift */; };
+		C92971A624A43F4B0038E8A7 /* AnywhereFitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92971A524A43F4B0038E8A7 /* AnywhereFitnessTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C92971A824A43F4B0038E8A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C929714D249B07970038E8A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9297154249B07970038E8A7;
+			remoteInfo = AnywhereFitness;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		51BCABA7249DAF44004234A5 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -86,10 +97,20 @@
 		C929719924A192520038E8A7 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		C929719B24A194860038E8A7 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		C929719D24A1A5ED0038E8A7 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
+		C92971A324A43F4B0038E8A7 /* AnywhereFitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnywhereFitnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92971A524A43F4B0038E8A7 /* AnywhereFitnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnywhereFitnessTests.swift; sourceTree = "<group>"; };
+		C92971A724A43F4B0038E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C9297152249B07970038E8A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92971A024A43F4B0038E8A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -160,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				C9297157249B07970038E8A7 /* AnywhereFitness */,
+				C92971A424A43F4B0038E8A7 /* AnywhereFitnessTests */,
 				C9297156249B07970038E8A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -168,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				C9297155249B07970038E8A7 /* AnywhereFitness.app */,
+				C92971A324A43F4B0038E8A7 /* AnywhereFitnessTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,6 +279,15 @@
 			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
+		C92971A424A43F4B0038E8A7 /* AnywhereFitnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				C92971A524A43F4B0038E8A7 /* AnywhereFitnessTests.swift */,
+				C92971A724A43F4B0038E8A7 /* Info.plist */,
+			);
+			path = AnywhereFitnessTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,6 +308,24 @@
 			productReference = C9297155249B07970038E8A7 /* AnywhereFitness.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C92971A224A43F4B0038E8A7 /* AnywhereFitnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C92971AC24A43F4B0038E8A7 /* Build configuration list for PBXNativeTarget "AnywhereFitnessTests" */;
+			buildPhases = (
+				C929719F24A43F4B0038E8A7 /* Sources */,
+				C92971A024A43F4B0038E8A7 /* Frameworks */,
+				C92971A124A43F4B0038E8A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C92971A924A43F4B0038E8A7 /* PBXTargetDependency */,
+			);
+			name = AnywhereFitnessTests;
+			productName = AnywhereFitnessTests;
+			productReference = C92971A324A43F4B0038E8A7 /* AnywhereFitnessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -288,6 +338,10 @@
 				TargetAttributes = {
 					C9297154249B07970038E8A7 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					C92971A224A43F4B0038E8A7 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = C9297154249B07970038E8A7;
 					};
 				};
 			};
@@ -305,6 +359,7 @@
 			projectRoot = "";
 			targets = (
 				C9297154249B07970038E8A7 /* AnywhereFitness */,
+				C92971A224A43F4B0038E8A7 /* AnywhereFitnessTests */,
 			);
 		};
 /* End PBXProject section */
@@ -323,6 +378,13 @@
 				C9297160249B07970038E8A7 /* Main.storyboard in Resources */,
 				51BCABAC249DB2DC004234A5 /* Profile.storyboard in Resources */,
 				C9297172249B0C990038E8A7 /* ClientSignUp.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92971A124A43F4B0038E8A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +426,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C929719F24A43F4B0038E8A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92971A624A43F4B0038E8A7 /* AnywhereFitnessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C92971A924A43F4B0038E8A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9297154249B07970038E8A7 /* AnywhereFitness */;
+			targetProxy = C92971A824A43F4B0038E8A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C929715E249B07970038E8A7 /* Main.storyboard */ = {
@@ -536,6 +614,44 @@
 			};
 			name = Release;
 		};
+		C92971AA24A43F4B0038E8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnywhereFitnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattmartindale.AnywhereFitnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnywhereFitness.app/AnywhereFitness";
+			};
+			name = Debug;
+		};
+		C92971AB24A43F4B0038E8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnywhereFitnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattmartindale.AnywhereFitnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnywhereFitness.app/AnywhereFitness";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +669,15 @@
 			buildConfigurations = (
 				C929716D249B079A0038E8A7 /* Debug */,
 				C929716E249B079A0038E8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C92971AC24A43F4B0038E8A7 /* Build configuration list for PBXNativeTarget "AnywhereFitnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92971AA24A43F4B0038E8A7 /* Debug */,
+				C92971AB24A43F4B0038E8A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

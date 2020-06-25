@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l5u-PA-cGT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l5u-PA-cGT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -14,7 +14,22 @@
                     <view key="view" contentMode="scaleToFill" id="FbE-zV-exm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qey-t0-OH9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                                <items>
+                                    <navigationItem title="Title" id="4SW-Kv-IsA">
+                                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="a4C-f2-oGE"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qey-t0-OH9" firstAttribute="leading" secondItem="zD7-SW-chr" secondAttribute="leading" id="bhi-R5-HdX"/>
+                            <constraint firstItem="Qey-t0-OH9" firstAttribute="trailing" secondItem="zD7-SW-chr" secondAttribute="trailing" id="jXU-Ec-g4S"/>
+                            <constraint firstItem="Qey-t0-OH9" firstAttribute="top" secondItem="zD7-SW-chr" secondAttribute="top" id="lsu-zz-bSv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zD7-SW-chr"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="a3X-ZU-cpo"/>
@@ -29,6 +44,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="l5u-PA-cGT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pzt-bv-HEI">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

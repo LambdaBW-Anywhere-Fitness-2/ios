@@ -69,11 +69,11 @@ class LandingPageViewController: UIViewController {
         case 1:
             let clientStoryboard = UIStoryboard(name: "ClientSignUp", bundle: nil)
             let clientVC = clientStoryboard.instantiateViewController(identifier: "clientVC")
-            self.present(clientVC, animated: true, completion: nil)
+            self.present(clientVC, animated: false, completion: nil)
         case 123:
             let instructorStoryboard = UIStoryboard(name: "InstructorSignUp", bundle: nil)
             let instructorVC = instructorStoryboard.instantiateViewController(identifier: "instructorVC")
-            self.present(instructorVC, animated: true, completion: nil)
+            self.present(instructorVC, animated: false, completion: nil)
         default:
             NSLog("Error: invalid roleID provided")
         }
