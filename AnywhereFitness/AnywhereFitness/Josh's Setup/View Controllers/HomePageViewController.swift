@@ -9,26 +9,36 @@
 import UIKit
 
 class HomePageViewController: UIViewController {
+    
     @IBOutlet weak var homePageImageView: UIImageView!
+    @IBOutlet weak var logOutButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setUpViews()
     }
     
     func setUpViews() {
-    view.backgroundColor = .smokyBlack
-    homePageImageView.alpha = 0.2
+        view.backgroundColor = .smokyBlack
+        homePageImageView.alpha = 0.2
+        
+        // Log out button
+        logOutButton.tintColor = .subtleRed
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    @IBAction func logOutButtonTapped(_ sender: UIBarButtonItem) {
+        #warning("implement log out feature")
     }
-    */
-
+    
+    
 }

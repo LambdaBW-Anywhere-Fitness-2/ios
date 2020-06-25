@@ -55,9 +55,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7pJ-LI-oci"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IAP-C6-TtU"/>
+                    <navigationItem key="navigationItem" id="IAP-C6-TtU">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="RpH-bn-nDy">
+                            <color key="tintColor" red="0.42640530720000003" green="0.56765578370000003" blue="0.64126785419999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="logOutButtonTapped:" destination="KfU-eR-ZcI" id="zDJ-27-G54"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="homePageImageView" destination="Rqb-ll-K53" id="2jx-y4-4ds"/>
+                        <outlet property="logOutButton" destination="RpH-bn-nDy" id="R4O-Yu-YIu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oyt-4X-6YP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
