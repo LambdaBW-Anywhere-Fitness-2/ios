@@ -17,7 +17,7 @@ enum Intensity: String, CaseIterable {
     case beginner, intermediate, advanced
 }
 
-extension Class {
+extension FitnessClass {
     var classRepresentation: ClassRepresentation? {
         guard let name = name,
             let type = type,
