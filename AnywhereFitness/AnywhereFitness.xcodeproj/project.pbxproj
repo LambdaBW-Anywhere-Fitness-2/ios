@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */; };
 		51BCABA8249DAF44004234A5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCABA7249DAF44004234A5 /* HomePageViewController.swift */; };
 		51BCABAA249DB2C6004234A5 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABA9249DB2C6004234A5 /* Favorites.storyboard */; };
 		51BCABAC249DB2DC004234A5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABAB249DB2DC004234A5 /* Profile.storyboard */; };
@@ -48,7 +47,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchViewController.swift; sourceTree = "<group>"; };
 		51BCABA7249DAF44004234A5 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		51BCABA9249DB2C6004234A5 /* Favorites.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		51BCABAB249DB2DC004234A5 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 		51BCABA4249DAEEF004234A5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */,
 				51BCABA7249DAF44004234A5 /* HomePageViewController.swift */,
 				51E5CF4324A2E89C005CDCE8 /* DefinedSearchViewController.swift */,
 			);
@@ -351,7 +348,6 @@
 				51E5CF3A24A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift in Sources */,
 				C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */,
 				C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */,
-				51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */,
 				61C43FC924A3C0B000D0473F /* ClassRepresentation.swift in Sources */,
 				C929718C24A033250038E8A7 /* ClientRepresentation.swift in Sources */,
 				51E5CF3E24A1A865005CDCE8 /* ClassSearchController.swift in Sources */,

@@ -16,14 +16,6 @@ class ClassSearchCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -36,12 +28,7 @@ class ClassSearchCollectionViewController: UICollectionViewController {
         let classSearch = classSearchController.classSearch[indexPath.item]
         cell.classSearchImage.image = classSearch.image
         cell.classSearchLabel.text = classSearch.className
-        cell.classSearch = classSearch
 
         return cell
     }
-
-//        override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//            let classSearch = classSearchController.classSearch[indexPath.item]
-//        }
 }
