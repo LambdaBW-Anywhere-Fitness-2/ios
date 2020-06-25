@@ -9,14 +9,18 @@
 import UIKit
 
 class HomePageViewController: UIViewController {
-
+    @IBOutlet weak var homePageImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setUpViews()
     }
     
-
+    func setUpViews() {
+    view.backgroundColor = .smokyBlack
+    homePageImageView.alpha = 0.2
+    }
     /*
     // MARK: - Navigation
 

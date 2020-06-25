@@ -15,6 +15,14 @@
 		51BCABB0249DB311004234A5 /* ClassSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABAF249DB311004234A5 /* ClassSearch.storyboard */; };
 		51E5CF3A24A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3924A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift */; };
 		51E5CF3C24A1A574005CDCE8 /* ClassSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3B24A1A574005CDCE8 /* ClassSearch.swift */; };
+		51E5CF3E24A1A865005CDCE8 /* ClassSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3D24A1A865005CDCE8 /* ClassSearchController.swift */; };
+		51E5CF4024A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */; };
+		51E5CF4424A2E89C005CDCE8 /* DefinedSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF4324A2E89C005CDCE8 /* DefinedSearchViewController.swift */; };
+		61C43FC724A3C09B00D0473F /* Class+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FC624A3C09B00D0473F /* Class+Convenience.swift */; };
+		61C43FC924A3C0B000D0473F /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FC824A3C0B000D0473F /* ClassRepresentation.swift */; };
+		61C43FCB24A3C0C400D0473F /* Class+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FCA24A3C0C400D0473F /* Class+Codable.swift */; };
+		61C43FCD24A3E28D00D0473F /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FCC24A3E28D00D0473F /* CreateClassViewController.swift */; };
+		61C43FCF24A3E83800D0473F /* ClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FCE24A3E83800D0473F /* ClassController.swift */; };
 		C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9297158249B07970038E8A7 /* AppDelegate.swift */; };
 		C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929715A249B07970038E8A7 /* SceneDelegate.swift */; };
 		C9297160249B07970038E8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C929715E249B07970038E8A7 /* Main.storyboard */; };
@@ -48,6 +56,14 @@
 		51BCABAF249DB311004234A5 /* ClassSearch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassSearch.storyboard; sourceTree = "<group>"; };
 		51E5CF3924A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		51E5CF3B24A1A574005CDCE8 /* ClassSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearch.swift; sourceTree = "<group>"; };
+		51E5CF3D24A1A865005CDCE8 /* ClassSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchController.swift; sourceTree = "<group>"; };
+		51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchCollectionViewController.swift; sourceTree = "<group>"; };
+		51E5CF4324A2E89C005CDCE8 /* DefinedSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedSearchViewController.swift; sourceTree = "<group>"; };
+		61C43FC624A3C09B00D0473F /* Class+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Convenience.swift"; sourceTree = "<group>"; };
+		61C43FC824A3C0B000D0473F /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
+		61C43FCA24A3C0C400D0473F /* Class+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Codable.swift"; sourceTree = "<group>"; };
+		61C43FCC24A3E28D00D0473F /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
+		61C43FCE24A3E83800D0473F /* ClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
 		C9297155249B07970038E8A7 /* AnywhereFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnywhereFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9297158249B07970038E8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C929715A249B07970038E8A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,10 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				51E5CF3824A1A539005CDCE8 /* Model Controller */,
-				51E5CF3724A1A52A005CDCE8 /* Model */,
-				51E5CF3524A1A512005CDCE8 /* Views */,
 				51BCABA4249DAEEF004234A5 /* View Controllers */,
 				51BCABA1249DAECF004234A5 /* Storyboards */,
+				51E5CF3724A1A52A005CDCE8 /* Model */,
+				51E5CF3524A1A512005CDCE8 /* Views */,
 			);
 			path = "Josh's Setup";
 			sourceTree = "<group>";
@@ -113,6 +129,7 @@
 			children = (
 				51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */,
 				51BCABA7249DAF44004234A5 /* HomePageViewController.swift */,
+				51E5CF4324A2E89C005CDCE8 /* DefinedSearchViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -121,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				51E5CF3924A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift */,
+				51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +154,7 @@
 		51E5CF3824A1A539005CDCE8 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				51E5CF3D24A1A865005CDCE8 /* ClassSearchController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -178,6 +197,7 @@
 				C929717B249B140C0038E8A7 /* ClientSignUpViewController.swift */,
 				C9297179249B13FF0038E8A7 /* InstructorSignUpViewController.swift */,
 				C9297177249B13090038E8A7 /* LandingPageViewController.swift */,
+				61C43FCC24A3E28D00D0473F /* CreateClassViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -223,6 +243,9 @@
 				C929718D24A035E80038E8A7 /* InstructorRepresentation.swift */,
 				C929719B24A194860038E8A7 /* Credentials.swift */,
 				C929719D24A1A5ED0038E8A7 /* UserLogin.swift */,
+				61C43FC624A3C09B00D0473F /* Class+Convenience.swift */,
+				61C43FC824A3C0B000D0473F /* ClassRepresentation.swift */,
+				61C43FCA24A3C0C400D0473F /* Class+Codable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				C929719924A192520038E8A7 /* NetworkController.swift */,
+				61C43FCE24A3E83800D0473F /* ClassController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -312,6 +336,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C43FC724A3C09B00D0473F /* Class+Convenience.swift in Sources */,
+				51E5CF4424A2E89C005CDCE8 /* DefinedSearchViewController.swift in Sources */,
+				61C43FCB24A3C0C400D0473F /* Class+Codable.swift in Sources */,
 				C929719A24A192520038E8A7 /* NetworkController.swift in Sources */,
 				C929717C249B140C0038E8A7 /* ClientSignUpViewController.swift in Sources */,
 				C9297184249C48FF0038E8A7 /* Color+Extension.swift in Sources */,
@@ -325,14 +352,19 @@
 				C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */,
 				C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */,
 				51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */,
+				61C43FC924A3C0B000D0473F /* ClassRepresentation.swift in Sources */,
 				C929718C24A033250038E8A7 /* ClientRepresentation.swift in Sources */,
+				51E5CF3E24A1A865005CDCE8 /* ClassSearchController.swift in Sources */,
+				51E5CF4024A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift in Sources */,
 				C929717A249B13FF0038E8A7 /* InstructorSignUpViewController.swift in Sources */,
 				C9297178249B13090038E8A7 /* LandingPageViewController.swift in Sources */,
 				51E5CF3C24A1A574005CDCE8 /* ClassSearch.swift in Sources */,
+				61C43FCD24A3E28D00D0473F /* CreateClassViewController.swift in Sources */,
 				C929719424A039030038E8A7 /* Instructor+Codable.swift in Sources */,
 				C929718824A030460038E8A7 /* CoreDataStack.swift in Sources */,
 				C929718A24A031400038E8A7 /* Client+Convencience.swift in Sources */,
 				C929719E24A1A5ED0038E8A7 /* UserLogin.swift in Sources */,
+				61C43FCF24A3E83800D0473F /* ClassController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
