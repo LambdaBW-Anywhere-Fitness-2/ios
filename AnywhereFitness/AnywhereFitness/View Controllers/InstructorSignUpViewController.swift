@@ -59,6 +59,7 @@ class InstructorSignUpViewController: UIViewController {
                     }
                     return
                 }
+                
                 // Displays alert that they successfully signed up
                 DispatchQueue.main.async {
                     self.displaySignedInAlert()
