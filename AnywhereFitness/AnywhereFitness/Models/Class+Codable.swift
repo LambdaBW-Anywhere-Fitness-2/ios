@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Class: Encodable {
+extension FitnessClass: Encodable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
