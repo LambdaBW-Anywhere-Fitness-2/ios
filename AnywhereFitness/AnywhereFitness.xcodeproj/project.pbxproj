@@ -17,6 +17,8 @@
 		51E5CF3E24A1A865005CDCE8 /* ClassSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3D24A1A865005CDCE8 /* ClassSearchController.swift */; };
 		51E5CF4024A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */; };
 		51E5CF4424A2E89C005CDCE8 /* DefinedSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF4324A2E89C005CDCE8 /* DefinedSearchViewController.swift */; };
+		51E5CF4624A596A5005CDCE8 /* ClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF4524A596A5005CDCE8 /* ClassesTableViewController.swift */; };
+		51E5CF4824A596BD005CDCE8 /* ClassesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF4724A596BD005CDCE8 /* ClassesTableViewCell.swift */; };
 		61C43FC724A3C09B00D0473F /* Class+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FC624A3C09B00D0473F /* Class+Convenience.swift */; };
 		61C43FC924A3C0B000D0473F /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FC824A3C0B000D0473F /* ClassRepresentation.swift */; };
 		61C43FCB24A3C0C400D0473F /* Class+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FCA24A3C0C400D0473F /* Class+Codable.swift */; };
@@ -68,6 +70,8 @@
 		51E5CF3D24A1A865005CDCE8 /* ClassSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchController.swift; sourceTree = "<group>"; };
 		51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchCollectionViewController.swift; sourceTree = "<group>"; };
 		51E5CF4324A2E89C005CDCE8 /* DefinedSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedSearchViewController.swift; sourceTree = "<group>"; };
+		51E5CF4524A596A5005CDCE8 /* ClassesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesTableViewController.swift; sourceTree = "<group>"; };
+		51E5CF4724A596BD005CDCE8 /* ClassesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesTableViewCell.swift; sourceTree = "<group>"; };
 		61C43FC624A3C09B00D0473F /* Class+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Convenience.swift"; sourceTree = "<group>"; };
 		61C43FC824A3C0B000D0473F /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
 		61C43FCA24A3C0C400D0473F /* Class+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Codable.swift"; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 			children = (
 				51BCABA7249DAF44004234A5 /* HomePageViewController.swift */,
 				51E5CF4324A2E89C005CDCE8 /* DefinedSearchViewController.swift */,
+				51E5CF4524A596A5005CDCE8 /* ClassesTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			children = (
 				51E5CF3924A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift */,
 				51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */,
+				51E5CF4724A596BD005CDCE8 /* ClassesTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -397,8 +403,10 @@
 			files = (
 				61C43FC724A3C09B00D0473F /* Class+Convenience.swift in Sources */,
 				51E5CF4424A2E89C005CDCE8 /* DefinedSearchViewController.swift in Sources */,
+				51E5CF4824A596BD005CDCE8 /* ClassesTableViewCell.swift in Sources */,
 				61C43FCB24A3C0C400D0473F /* Class+Codable.swift in Sources */,
 				C929719A24A192520038E8A7 /* NetworkController.swift in Sources */,
+				51E5CF4624A596A5005CDCE8 /* ClassesTableViewController.swift in Sources */,
 				C929717C249B140C0038E8A7 /* ClientSignUpViewController.swift in Sources */,
 				C9297184249C48FF0038E8A7 /* Color+Extension.swift in Sources */,
 				51BCABA8249DAF44004234A5 /* HomePageViewController.swift in Sources */,
