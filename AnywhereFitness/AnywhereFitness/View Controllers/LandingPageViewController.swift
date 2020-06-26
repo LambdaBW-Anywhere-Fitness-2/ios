@@ -169,11 +169,11 @@ class LandingPageViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "InstructorSignUpSegue" {
-            let instructorSignUpVC = segue.destination as! InstructorSignUpViewController
-            instructorSignUpVC.networkController = networkController
+            let instructorSignUpVC = segue.destination as? InstructorSignUpViewController
+            instructorSignUpVC?.networkController = networkController
         } else if segue.identifier == "ClientSignUpSegue" {
-            let clientSignUpVC = segue.destination as! ClientSignUpViewController
-            clientSignUpVC.networkController = networkController
+            let clientSignUpVC = segue.destination as? ClientSignUpViewController
+            clientSignUpVC?.networkController = networkController
         }
     }
 

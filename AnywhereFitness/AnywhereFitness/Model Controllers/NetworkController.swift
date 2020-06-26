@@ -26,6 +26,12 @@ enum NetworkError: Error {
 
 class NetworkController {
     
+    private let session: URLSessionProtocol
+    
+    init(session: URLSessionProtocol = URLSession.shared) {
+        self.session = session
+    }
+    
     let baseURL: URL = URL(string: "https://anywherefitnessapp.herokuapp.com/api")!
     
     func signUpAsClient(with client: Client, completion: @escaping (NetworkError?) -> Void) {
@@ -45,7 +51,7 @@ class NetworkController {
             return
         }
         
-        let dataTask = URLSession.shared.dataTask(with: request) { (_, response, error) in
+        let dataTask = session.dataTask(with: request) { (_, response, error) in
             guard error == nil else {
                 completion(.otherError)
                 return
@@ -82,7 +88,7 @@ class NetworkController {
             return
         }
         
-        let dataTask = URLSession.shared.dataTask(with: request) { (_, response, error) in
+        let dataTask = session.dataTask(with: request) { (_, response, error) in
             guard error == nil else {
                 completion(.otherError)
                 return
@@ -120,7 +126,7 @@ class NetworkController {
             return
         }
         
-        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
             guard error == nil else {
                 completion(.failure(.otherError))
                 return
@@ -151,6 +157,15 @@ class NetworkController {
             }
         }
         dataTask.resume()
+    }
+    
+    func get( url: URL, completion: @escaping (_ data: Data?, _ error: Error?) -> Void ) {
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        let task = session.dataTask(with: request) { (data, response, error) in
+            completion(data, error)
+        }
+        task.resume()
     }
     
 }

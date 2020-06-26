@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01625438F7766891A39125DE /* Pods_AnywhereFitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99563F263B8EAAAA416CFCFA /* Pods_AnywhereFitnessTests.framework */; };
+		51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */; };
 		51BCABA8249DAF44004234A5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCABA7249DAF44004234A5 /* HomePageViewController.swift */; };
 		51BCABAA249DB2C6004234A5 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABA9249DB2C6004234A5 /* Favorites.storyboard */; };
 		51BCABAC249DB2DC004234A5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABAB249DB2DC004234A5 /* Profile.storyboard */; };
@@ -45,6 +47,12 @@
 		C929719C24A194860038E8A7 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719B24A194860038E8A7 /* Credentials.swift */; };
 		C929719E24A1A5ED0038E8A7 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929719D24A1A5ED0038E8A7 /* UserLogin.swift */; };
 		C92971A624A43F4B0038E8A7 /* AnywhereFitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92971A524A43F4B0038E8A7 /* AnywhereFitnessTests.swift */; };
+		C92971AF24A586720038E8A7 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92971AE24A586720038E8A7 /* URLSessionProtocol.swift */; };
+		C92971B124A587E80038E8A7 /* URLSession+SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92971B024A587E80038E8A7 /* URLSession+SessionProtocol.swift */; };
+		C92971B324A588E80038E8A7 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92971B224A588E80038E8A7 /* MockURLSession.swift */; };
+		C92971B624A58E2C0038E8A7 /* autocorrect.yml in Resources */ = {isa = PBXBuildFile; fileRef = C92971B424A58E2C0038E8A7 /* autocorrect.yml */; };
+		C92971B724A58E2C0038E8A7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C92971B524A58E2C0038E8A7 /* .swiftlint.yml */; };
+		D358010461941BE8E060F204 /* Pods_AnywhereFitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84E6667AAF2B99DA04D60B1 /* Pods_AnywhereFitness.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +66,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0219E754B15D141F4224C8D4 /* Pods-AnywhereFitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-AnywhereFitnessTests/Pods-AnywhereFitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		234470B2DEBC5E9E04EF443E /* Pods-AnywhereFitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitnessTests.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitnessTests/Pods-AnywhereFitnessTests.release.xcconfig"; sourceTree = "<group>"; };
+		51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchViewController.swift; sourceTree = "<group>"; };
 		51BCABA7249DAF44004234A5 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		51BCABA9249DB2C6004234A5 /* Favorites.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		51BCABAB249DB2DC004234A5 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -73,6 +84,8 @@
 		61C43FCA24A3C0C400D0473F /* Class+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Codable.swift"; sourceTree = "<group>"; };
 		61C43FCC24A3E28D00D0473F /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
 		61C43FCE24A3E83800D0473F /* ClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
+		99563F263B8EAAAA416CFCFA /* Pods_AnywhereFitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9ADB40B5BA963C4822D2AB8 /* Pods-AnywhereFitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness/Pods-AnywhereFitness.release.xcconfig"; sourceTree = "<group>"; };
 		C9297155249B07970038E8A7 /* AnywhereFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnywhereFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9297158249B07970038E8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C929715A249B07970038E8A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +113,13 @@
 		C92971A324A43F4B0038E8A7 /* AnywhereFitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnywhereFitnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92971A524A43F4B0038E8A7 /* AnywhereFitnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnywhereFitnessTests.swift; sourceTree = "<group>"; };
 		C92971A724A43F4B0038E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C92971AE24A586720038E8A7 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URLSessionProtocol.swift; path = AnywhereFitness/Models/URLSessionProtocol.swift; sourceTree = SOURCE_ROOT; };
+		C92971B024A587E80038E8A7 /* URLSession+SessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "URLSession+SessionProtocol.swift"; path = "AnywhereFitness/Models/URLSession+SessionProtocol.swift"; sourceTree = SOURCE_ROOT; };
+		C92971B224A588E80038E8A7 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockURLSession.swift; path = AnywhereFitness/Models/MockURLSession.swift; sourceTree = SOURCE_ROOT; };
+		C92971B424A58E2C0038E8A7 /* autocorrect.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = autocorrect.yml; sourceTree = "<group>"; };
+		C92971B524A58E2C0038E8A7 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		D84E6667AAF2B99DA04D60B1 /* Pods_AnywhereFitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15B1BE69C5E11803EB9F622 /* Pods-AnywhereFitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness.debug.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness/Pods-AnywhereFitness.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D358010461941BE8E060F204 /* Pods_AnywhereFitness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +135,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01625438F7766891A39125DE /* Pods_AnywhereFitnessTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		264F75A55EE0E8BD9492D653 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F15B1BE69C5E11803EB9F622 /* Pods-AnywhereFitness.debug.xcconfig */,
+				A9ADB40B5BA963C4822D2AB8 /* Pods-AnywhereFitness.release.xcconfig */,
+				0219E754B15D141F4224C8D4 /* Pods-AnywhereFitnessTests.debug.xcconfig */,
+				234470B2DEBC5E9E04EF443E /* Pods-AnywhereFitnessTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		51BCAB9F249DAEAE004234A5 /* Josh's Setup */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,12 +210,23 @@
 			path = "Model Controller";
 			sourceTree = "<group>";
 		};
+		7B3982D429A97AA7337C16AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D84E6667AAF2B99DA04D60B1 /* Pods_AnywhereFitness.framework */,
+				99563F263B8EAAAA416CFCFA /* Pods_AnywhereFitnessTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C929714C249B07970038E8A7 = {
 			isa = PBXGroup;
 			children = (
 				C9297157249B07970038E8A7 /* AnywhereFitness */,
 				C92971A424A43F4B0038E8A7 /* AnywhereFitnessTests */,
 				C9297156249B07970038E8A7 /* Products */,
+				264F75A55EE0E8BD9492D653 /* Pods */,
+				7B3982D429A97AA7337C16AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,14 +242,15 @@
 		C9297157249B07970038E8A7 /* AnywhereFitness */ = {
 			isa = PBXGroup;
 			children = (
-				51BCAB9F249DAEAE004234A5 /* Josh's Setup */,
 				C9297169249B079A0038E8A7 /* Info.plist */,
 				C9297164249B079A0038E8A7 /* Assets.xcassets */,
 				C9297185249C49040038E8A7 /* Helpers */,
+				51BCAB9F249DAEAE004234A5 /* Josh's Setup */,
 				C929719824A192380038E8A7 /* Model Controllers */,
 				C929718624A030350038E8A7 /* Models */,
 				C9297182249C47F50038E8A7 /* Resources */,
 				C9297181249C478C0038E8A7 /* Storyboards */,
+				C92971AD24A5864C0038E8A7 /* TestFiles */,
 				C9297176249B12E30038E8A7 /* View Controllers */,
 			);
 			path = AnywhereFitness;
@@ -236,6 +281,8 @@
 		C9297182249C47F50038E8A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C92971B524A58E2C0038E8A7 /* .swiftlint.yml */,
+				C92971B424A58E2C0038E8A7 /* autocorrect.yml */,
 				C929715A249B07970038E8A7 /* SceneDelegate.swift */,
 				C9297158249B07970038E8A7 /* AppDelegate.swift */,
 			);
@@ -288,6 +335,16 @@
 			path = AnywhereFitnessTests;
 			sourceTree = "<group>";
 		};
+		C92971AD24A5864C0038E8A7 /* TestFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C92971AE24A586720038E8A7 /* URLSessionProtocol.swift */,
+				C92971B024A587E80038E8A7 /* URLSession+SessionProtocol.swift */,
+				C92971B224A588E80038E8A7 /* MockURLSession.swift */,
+			);
+			path = TestFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,9 +352,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C929716C249B079A0038E8A7 /* Build configuration list for PBXNativeTarget "AnywhereFitness" */;
 			buildPhases = (
+				BD3EAE88E71129E9F85C0F43 /* [CP] Check Pods Manifest.lock */,
 				C9297151249B07970038E8A7 /* Sources */,
 				C9297152249B07970038E8A7 /* Frameworks */,
 				C9297153249B07970038E8A7 /* Resources */,
+				C92971B824A58EC20038E8A7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -312,6 +371,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C92971AC24A43F4B0038E8A7 /* Build configuration list for PBXNativeTarget "AnywhereFitnessTests" */;
 			buildPhases = (
+				30347FE73E28DDA50B8F8C85 /* [CP] Check Pods Manifest.lock */,
 				C929719F24A43F4B0038E8A7 /* Sources */,
 				C92971A024A43F4B0038E8A7 /* Frameworks */,
 				C92971A124A43F4B0038E8A7 /* Resources */,
@@ -369,6 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92971B624A58E2C0038E8A7 /* autocorrect.yml in Resources */,
 				C9297168249B079A0038E8A7 /* LaunchScreen.storyboard in Resources */,
 				C9297170249B0C890038E8A7 /* InstructorSignUp.storyboard in Resources */,
 				51BCABAA249DB2C6004234A5 /* Favorites.storyboard in Resources */,
@@ -378,6 +439,7 @@
 				C9297160249B07970038E8A7 /* Main.storyboard in Resources */,
 				51BCABAC249DB2DC004234A5 /* Profile.storyboard in Resources */,
 				C9297172249B0C990038E8A7 /* ClientSignUp.storyboard in Resources */,
+				C92971B724A58E2C0038E8A7 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,11 +452,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30347FE73E28DDA50B8F8C85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnywhereFitnessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD3EAE88E71129E9F85C0F43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnywhereFitness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C92971B824A58EC20038E8A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9297151249B07970038E8A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92971AF24A586720038E8A7 /* URLSessionProtocol.swift in Sources */,
 				61C43FC724A3C09B00D0473F /* Class+Convenience.swift in Sources */,
 				51E5CF4424A2E89C005CDCE8 /* DefinedSearchViewController.swift in Sources */,
 				61C43FCB24A3C0C400D0473F /* Class+Codable.swift in Sources */,
@@ -410,9 +537,12 @@
 				51E5CF3A24A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift in Sources */,
 				C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */,
 				C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */,
+				C92971B324A588E80038E8A7 /* MockURLSession.swift in Sources */,
+				51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */,
 				61C43FC924A3C0B000D0473F /* ClassRepresentation.swift in Sources */,
 				C929718C24A033250038E8A7 /* ClientRepresentation.swift in Sources */,
 				51E5CF3E24A1A865005CDCE8 /* ClassSearchController.swift in Sources */,
+				C92971B124A587E80038E8A7 /* URLSession+SessionProtocol.swift in Sources */,
 				51E5CF4024A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift in Sources */,
 				C929717A249B13FF0038E8A7 /* InstructorSignUpViewController.swift in Sources */,
 				C9297178249B13090038E8A7 /* LandingPageViewController.swift in Sources */,
@@ -580,6 +710,7 @@
 		};
 		C929716D249B079A0038E8A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F15B1BE69C5E11803EB9F622 /* Pods-AnywhereFitness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -598,6 +729,7 @@
 		};
 		C929716E249B079A0038E8A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9ADB40B5BA963C4822D2AB8 /* Pods-AnywhereFitness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -616,6 +748,7 @@
 		};
 		C92971AA24A43F4B0038E8A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0219E754B15D141F4224C8D4 /* Pods-AnywhereFitnessTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -635,6 +768,7 @@
 		};
 		C92971AB24A43F4B0038E8A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234470B2DEBC5E9E04EF443E /* Pods-AnywhereFitnessTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

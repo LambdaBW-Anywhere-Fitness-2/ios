@@ -40,7 +40,15 @@ class CreateClassViewController: UIViewController {
         else { return }
         
         // TODO: - Get dates from date and time picker
-//        let fitnessClass = FitnessClass(name: name, type: ClassType(rawValue: type)!, startTime: Date(), startDate: Date(), duration: duration, intensity: Intensity(rawValue: intensity)!, location: location, numOfAttendees: 0, maxClassSize: maxClassSize)
+//        let fitnessClass = FitnessClass(name: name,
+//        type: ClassType(rawValue: type)!,
+//        startTime: Date(),
+//        startDate: Date(),
+//        duration: duration,
+//        intensity: Intensity(rawValue: intensity)!,
+//        location: location,
+//        numOfAttendees: 0,
+//        maxClassSize: maxClassSize)
 //        
 //        classController?.createClass(fitnessClass: fitnessClass)
         
