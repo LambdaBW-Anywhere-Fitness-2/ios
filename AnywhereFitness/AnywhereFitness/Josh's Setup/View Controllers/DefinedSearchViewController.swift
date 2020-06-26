@@ -29,9 +29,10 @@ class DefinedSearchViewController: UIViewController {
     }
     var fitnessClass: FitnessClass?
 
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateViews()
+    }
     
     @IBAction func maleButtonTapped(_ sender: UIButton) {
         guard var classSearch = classSearch else { return }
@@ -73,5 +74,5 @@ class DefinedSearchViewController: UIViewController {
            guard let classSearch = classSearch else { return }
 
         maleButton.setImage(classSearch.checked ? UIImage(systemName: "rectangle") : UIImage(systemName: "checkmark.rectangle"), for: .normal)
-       }
+    }
 }
