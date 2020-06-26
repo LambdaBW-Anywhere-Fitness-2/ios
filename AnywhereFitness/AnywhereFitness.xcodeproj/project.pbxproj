@@ -179,7 +179,6 @@
 		51BCABA4249DAEEF004234A5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */,
 				51BCABA7249DAF44004234A5 /* HomePageViewController.swift */,
 				51E5CF4324A2E89C005CDCE8 /* DefinedSearchViewController.swift */,
 			);
