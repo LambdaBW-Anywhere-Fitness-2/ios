@@ -11,12 +11,12 @@ import Foundation
 class ClassSearchController {
     var classSearch: [ClassSearch] {
         let classSearch = [
-            ClassSearch(className: "Yoga", imageName: "yoga"),
-            ClassSearch(className: "Running", imageName: "running"),
-            ClassSearch(className: "Boxing", imageName: "boxing"),
-            ClassSearch(className: "Weightlifting", imageName: "weightlifting"),
-            ClassSearch(className: "Dancing", imageName: "dancing"),
-            ClassSearch(className: "Biking", imageName: "biking")
+            ClassSearch(className: "Yoga", imageName: "yoga", checked: false),
+            ClassSearch(className: "Running", imageName: "running", checked: false),
+            ClassSearch(className: "Boxing", imageName: "boxing", checked: false),
+            ClassSearch(className: "Weightlifting", imageName: "weightlifting", checked: false),
+            ClassSearch(className: "Dancing", imageName: "dancing", checked: false),
+            ClassSearch(className: "Biking", imageName: "biking", checked: false)
         ]
 
             return classSearch
