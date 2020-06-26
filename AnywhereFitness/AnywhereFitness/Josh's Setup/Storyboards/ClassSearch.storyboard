@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tIL-mx-aFP">
-                            <size key="itemSize" width="160" height="160"/>
+                            <size key="itemSize" width="170" height="170"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
@@ -331,9 +331,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Define Search" id="Vjv-qd-dbi"/>
                     <connections>
+                        <outlet property="advancedButton" destination="lK3-mD-a6f" id="gGB-PD-ggg"/>
+                        <outlet property="beginnerButton" destination="cM6-wx-Iwd" id="6Z7-2b-hT9"/>
                         <outlet property="classSizeLabel" destination="fhj-2s-cWc" id="Zck-jQ-eoj"/>
+                        <outlet property="femaleButton" destination="36w-8M-96f" id="FDb-Cu-GmD"/>
                         <outlet property="fitnessLevelLabel" destination="Xyn-dd-AHu" id="Yev-Es-DRE"/>
                         <outlet property="instructorGenderLabel" destination="M5y-fO-vOP" id="iA9-F7-y2B"/>
+                        <outlet property="intermediateButton" destination="Mex-SL-zYV" id="Utf-qc-M7c"/>
+                        <outlet property="largeClassButton" destination="Erz-z3-Cdf" id="WkS-eb-vgY"/>
+                        <outlet property="maleButton" destination="YdJ-Ex-h6Q" id="RED-uT-eHT"/>
+                        <outlet property="mediumClassButton" destination="Q0b-BA-tb5" id="ZN1-es-EzS"/>
+                        <outlet property="smallClassButton" destination="5Uc-x7-Zu0" id="SAG-9z-j8t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZo-Or-dbu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
