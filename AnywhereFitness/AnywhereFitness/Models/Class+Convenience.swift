@@ -24,7 +24,15 @@ extension FitnessClass {
         let intensity = intensity,
         let location = location else { return nil }
         
-        return ClassRepresentation(name: name, type: type, startTime: startTime ?? Date(), startDate: startDate ?? Date(), duration: duration, intensity: intensity, location: location, numOfAttendees: numOfAttendees, maxClassSize: maxClassSize)
+        return ClassRepresentation(name: name,
+                                   type: type,
+                                   startTime: startTime ?? Date(),
+                                   startDate: startDate ?? Date(),
+                                   duration: duration,
+                                   intensity: intensity,
+                                   location: location,
+                                   numOfAttendees: numOfAttendees,
+                                   maxClassSize: maxClassSize)
     }
     
     @discardableResult convenience init(name: String,
