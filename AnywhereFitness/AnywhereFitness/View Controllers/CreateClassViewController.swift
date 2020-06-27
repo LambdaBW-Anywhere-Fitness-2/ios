@@ -10,7 +10,7 @@ import UIKit
 
 class CreateClassViewController: UIViewController {
     
-    var classController: ClassController?
+    var classController = ClassController()
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var typeTextField: UITextField!
@@ -20,9 +20,10 @@ class CreateClassViewController: UIViewController {
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var maxSizeTextField: UITextField!
     
+    private var datePicker: UIDatePicker?
+    
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
-        guard let fitnessClass = classController,
-            let name = nameTextField.text,
+        guard let name = nameTextField.text,
             !name.isEmpty,
             let type = typeTextField.text,
             !type.isEmpty,
@@ -40,17 +41,17 @@ class CreateClassViewController: UIViewController {
         else { return }
         
         // TODO: - Get dates from date and time picker
-//        let fitnessClass = FitnessClass(name: name,
-//        type: ClassType(rawValue: type)!,
-//        startTime: Date(),
-//        startDate: Date(),
-//        duration: duration,
-//        intensity: Intensity(rawValue: intensity)!,
-//        location: location,
-//        numOfAttendees: 0,
-//        maxClassSize: maxClassSize)
-//        
-//        classController?.createClass(fitnessClass: fitnessClass)
+        let fitnessClass = FitnessClass(name: name,
+        type: ClassType(rawValue: type)!,
+        startTime: Date(),
+        startDate: Date(),
+        duration: duration,
+        intensity: Intensity(rawValue: intensity)!,
+        location: location,
+        numOfAttendees: 0,
+        maxClassSize: maxClassSize)
+        
+        classController.createClass(fitnessClass: fitnessClass)
         
         do {
             try CoreDataStack.shared.mainContext.save()
@@ -72,7 +73,27 @@ class CreateClassViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        datePicker = UIDatePicker()
+        datePicker?.datePickerMode = .dateAndTime
+        datePicker?.addTarget(self, action: #selector(dateChanged(datePicker:)), for: .valueChanged)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
+        
+        view.addGestureRecognizer(tapGesture)
+        
+        startTextField.inputView = datePicker
+    }
+    
+    @objc func dateChanged(datePicker: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        
+        startTextField.text = dateFormatter.string(from: datePicker.date)
+        view.endEditing(true)
+    }
+    
+    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
     
 
