@@ -9,9 +9,9 @@
 import UIKit
 
 class CreateClassViewController: UIViewController {
-    
+
     var classController: ClassController?
-    
+
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var typeTextField: UITextField!
     @IBOutlet weak var startTextField: UITextField!
@@ -19,7 +19,7 @@ class CreateClassViewController: UIViewController {
     @IBOutlet weak var intensityControl: UISegmentedControl!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var maxSizeTextField: UITextField!
-    
+
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
         guard let fitnessClass = classController,
             let name = nameTextField.text,
@@ -38,7 +38,7 @@ class CreateClassViewController: UIViewController {
             let maxClassSizeString = maxSizeTextField.text,
             let maxClassSize = Int64(maxClassSizeString)
         else { return }
-        
+
         // TODO: - Get dates from date and time picker
 //        let fitnessClass = FitnessClass(name: name,
 //        type: ClassType(rawValue: type)!,
@@ -51,14 +51,14 @@ class CreateClassViewController: UIViewController {
 //        maxClassSize: maxClassSize)
 //        
 //        classController?.createClass(fitnessClass: fitnessClass)
-        
+
         do {
             try CoreDataStack.shared.mainContext.save()
         } catch {
             NSLog("Error saving managed object context: \(error)")
         }
     }
-    
+
     @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
         nameTextField.text = ""
         typeTextField.text = ""
@@ -68,13 +68,12 @@ class CreateClassViewController: UIViewController {
         locationTextField.text = ""
         maxSizeTextField.text = ""
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation

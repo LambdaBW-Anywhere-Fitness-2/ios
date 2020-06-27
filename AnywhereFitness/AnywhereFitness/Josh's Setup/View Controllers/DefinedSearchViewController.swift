@@ -33,11 +33,13 @@ class DefinedSearchViewController: UIViewController {
         super.viewDidLoad()
         updateViews()
     }
-    
+
     @IBAction func maleButtonTapped(_ sender: UIButton) {
         guard var classSearch = classSearch else { return }
 
         classSearch.checked.toggle()
+
+//        maleButton.setBackgroundImage(classSearch.checked ? UIImage(systemName: "rectangle") : UIImage(systemName: "checkmark.rectangle"), for: .normal)
 
         maleButton.setImage(classSearch.checked ? UIImage(systemName: "rectangle") : UIImage(systemName: "checkmark.rectangle"), for: .normal)
     }
@@ -73,6 +75,10 @@ class DefinedSearchViewController: UIViewController {
     private func updateViews() {
            guard let classSearch = classSearch else { return }
 
-        maleButton.setImage(classSearch.checked ? UIImage(systemName: "rectangle") : UIImage(systemName: "checkmark.rectangle"), for: .normal)
+//                maleButton.setBackgroundImage(classSearch.checked ? UIImage(systemName: "rectangle") : UIImage(systemName: "checkmark.rectangle"), for: .normal)
+
+//        maleButton.setImage(classSearch.checked ? UIImage(systemName: "rectangle") : UIImage(systemName: "checkmark.rectangle"), for: .normal)
+
+        maleButton.setImage(UIImage(systemName: "rectangle"), for: .normal)
     }
 }

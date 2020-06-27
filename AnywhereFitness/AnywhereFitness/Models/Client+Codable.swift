@@ -11,16 +11,16 @@ import Foundation
 extension Client: Encodable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        
+
         try container.encode(name, forKey: .name)
         try container.encode(email, forKey: .email)
         try container.encode(password, forKey: .password)
     }
-    
+
     enum CodingKeys: String, CodingKey {
         case name
         case email
         case password
     }
-    
+
 }

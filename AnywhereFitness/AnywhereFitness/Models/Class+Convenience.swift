@@ -23,7 +23,7 @@ extension FitnessClass {
             let type = type,
         let intensity = intensity,
         let location = location else { return nil }
-        
+
         return ClassRepresentation(name: name,
                                    type: type,
                                    startTime: startTime ?? Date(),
@@ -34,7 +34,7 @@ extension FitnessClass {
                                    numOfAttendees: numOfAttendees,
                                    maxClassSize: maxClassSize)
     }
-    
+
     @discardableResult convenience init(name: String,
                                         type: ClassType,
                                         startTime: Date,
@@ -56,12 +56,12 @@ extension FitnessClass {
         self.numOfAttendees = numOfAttendees
         self.maxClassSize = maxClassSize
     }
-    
+
     @discardableResult convenience init?(classRepresentation: ClassRepresentation, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         guard let type = ClassType(rawValue: classRepresentation.type),
             let intensity = Intensity(rawValue: classRepresentation.intensity) else {
                 return nil }
-        
+
         self.init(name: classRepresentation.name,
                   type: type,
                   startTime: classRepresentation.startTime,
