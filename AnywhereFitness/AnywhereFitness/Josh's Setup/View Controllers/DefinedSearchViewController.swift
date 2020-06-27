@@ -22,6 +22,7 @@ class DefinedSearchViewController: UIViewController {
     @IBOutlet weak var mediumClassButton: UIButton!
     @IBOutlet weak var largeClassButton: UIButton!
 
+    var classSearchController: ClassSearchController?
     var classSearch: ClassSearch? {
         didSet {
             updateViews()
@@ -39,46 +40,99 @@ class DefinedSearchViewController: UIViewController {
 
         classSearch.checked.toggle()
 
-//        maleButton.setBackgroundImage(classSearch.checked ? UIImage(systemName: "rectangle") : UIImage(systemName: "checkmark.rectangle"), for: .normal)
-
-        maleButton.setImage(classSearch.checked ? UIImage(systemName: "rectangle") : UIImage(systemName: "checkmark.rectangle"), for: .normal)
+        maleButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
     }
 
     @IBAction func femaleButtonTapped(_ sender: UIButton) {
+        guard var classSearch = classSearch else { return }
 
+        classSearch.checked.toggle()
+
+        femaleButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
     }
 
     @IBAction func beginnerButtonTapped(_ sender: UIButton) {
+        guard var classSearch = classSearch else { return }
 
+        classSearch.checked.toggle()
+
+        beginnerButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
     }
 
     @IBAction func intermediateButtonTapped(_ sender: UIButton) {
+        guard var classSearch = classSearch else { return }
 
+        classSearch.checked.toggle()
+
+        intermediateButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
     }
 
     @IBAction func advancedButtonTapped(_ sender: UIButton) {
+        guard var classSearch = classSearch else { return }
 
+        classSearch.checked.toggle()
+
+        advancedButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
     }
 
     @IBAction func smallButtonTapped(_ sender: UIButton) {
+        guard var classSearch = classSearch else { return }
 
+        classSearch.checked.toggle()
+
+        smallClassButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
     }
 
     @IBAction func mediumButtonTapped(_ sender: UIButton) {
+        guard var classSearch = classSearch else { return }
 
+        classSearch.checked.toggle()
+
+        mediumClassButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
     }
 
     @IBAction func largeButtonTapped(_ sender: UIButton) {
+        guard var classSearch = classSearch else { return }
 
+        classSearch.checked.toggle()
+
+        largeClassButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
     }
 
     private func updateViews() {
-           guard let classSearch = classSearch else { return }
+        guard let classSearch = classSearch else { return }
 
-//                maleButton.setBackgroundImage(classSearch.checked ? UIImage(systemName: "rectangle") : UIImage(systemName: "checkmark.rectangle"), for: .normal)
+        maleButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
+        femaleButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
+        beginnerButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
+        intermediateButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
+        advancedButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
+        smallClassButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
+        mediumClassButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
+        largeClassButton.setImage(classSearch.checked ? UIImage(systemName: "square") : UIImage(systemName: "checkmark.square"), for: .normal)
 
-//        maleButton.setImage(classSearch.checked ? UIImage(systemName: "rectangle") : UIImage(systemName: "checkmark.rectangle"), for: .normal)
+        if maleButton.isSelected || femaleButton.isSelected {
+            instructorGenderLabel.backgroundColor = .subtleRed
+        }
 
-        maleButton.setImage(UIImage(systemName: "rectangle"), for: .normal)
+        if beginnerButton.isSelected {
+            fitnessLevelLabel.backgroundColor = .subtleRed
+        } else if intermediateButton.isSelected {
+            fitnessLevelLabel.backgroundColor = .subtleRed
+        } else if advancedButton.isSelected {
+            fitnessLevelLabel.backgroundColor = .subtleRed
+        } else {
+            print("Didn't work.")
+        }
+
+        if smallClassButton.isSelected {
+            classSizeLabel.backgroundColor = .subtleRed
+        } else if mediumClassButton.isSelected {
+            classSizeLabel.backgroundColor = .subtleRed
+        } else if largeClassButton.isSelected {
+            classSizeLabel.backgroundColor = .subtleRed
+        } else {
+            print("Didn't work.")
+        }
     }
 }

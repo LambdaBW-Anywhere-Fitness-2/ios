@@ -13,6 +13,7 @@ private let reuseIdentifier = "ClassSearchCell"
 class ClassSearchCollectionViewController: UICollectionViewController {
 
     let classSearchController = ClassSearchController()
+    var classSearch: ClassSearch?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,5 +31,17 @@ class ClassSearchCollectionViewController: UICollectionViewController {
         cell.classSearchLabel.text = classSearch.className
 
         return cell
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "DefinedSearchSegue":
+            if let definedSearchVC = segue.destination as? DefinedSearchViewController {
+                definedSearchVC.classSearch = self.classSearch
+                definedSearchVC.classSearchController = self.classSearchController
+            }
+        default:
+            break
+        }
     }
 }
