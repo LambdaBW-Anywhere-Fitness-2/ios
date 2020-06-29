@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		01625438F7766891A39125DE /* Pods_AnywhereFitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99563F263B8EAAAA416CFCFA /* Pods_AnywhereFitnessTests.framework */; };
-		51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */; };
 		51BCABA8249DAF44004234A5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BCABA7249DAF44004234A5 /* HomePageViewController.swift */; };
 		51BCABAA249DB2C6004234A5 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABA9249DB2C6004234A5 /* Favorites.storyboard */; };
 		51BCABAC249DB2DC004234A5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BCABAB249DB2DC004234A5 /* Profile.storyboard */; };
@@ -19,6 +18,8 @@
 		51E5CF3E24A1A865005CDCE8 /* ClassSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3D24A1A865005CDCE8 /* ClassSearchController.swift */; };
 		51E5CF4024A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */; };
 		51E5CF4424A2E89C005CDCE8 /* DefinedSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF4324A2E89C005CDCE8 /* DefinedSearchViewController.swift */; };
+		51E5CF4624A596A5005CDCE8 /* ClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF4524A596A5005CDCE8 /* ClassesTableViewController.swift */; };
+		51E5CF4824A596BD005CDCE8 /* ClassesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5CF4724A596BD005CDCE8 /* ClassesTableViewCell.swift */; };
 		61C43FC724A3C09B00D0473F /* Class+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FC624A3C09B00D0473F /* Class+Convenience.swift */; };
 		61C43FC924A3C0B000D0473F /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FC824A3C0B000D0473F /* ClassRepresentation.swift */; };
 		61C43FCB24A3C0C400D0473F /* Class+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C43FCA24A3C0C400D0473F /* Class+Codable.swift */; };
@@ -68,7 +69,6 @@
 /* Begin PBXFileReference section */
 		0219E754B15D141F4224C8D4 /* Pods-AnywhereFitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-AnywhereFitnessTests/Pods-AnywhereFitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		234470B2DEBC5E9E04EF443E /* Pods-AnywhereFitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitnessTests.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitnessTests/Pods-AnywhereFitnessTests.release.xcconfig"; sourceTree = "<group>"; };
-		51BCABA5249DAF34004234A5 /* ClassSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchViewController.swift; sourceTree = "<group>"; };
 		51BCABA7249DAF44004234A5 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		51BCABA9249DB2C6004234A5 /* Favorites.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		51BCABAB249DB2DC004234A5 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -79,6 +79,8 @@
 		51E5CF3D24A1A865005CDCE8 /* ClassSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchController.swift; sourceTree = "<group>"; };
 		51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearchCollectionViewController.swift; sourceTree = "<group>"; };
 		51E5CF4324A2E89C005CDCE8 /* DefinedSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedSearchViewController.swift; sourceTree = "<group>"; };
+		51E5CF4524A596A5005CDCE8 /* ClassesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesTableViewController.swift; sourceTree = "<group>"; };
+		51E5CF4724A596BD005CDCE8 /* ClassesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesTableViewCell.swift; sourceTree = "<group>"; };
 		61C43FC624A3C09B00D0473F /* Class+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Convenience.swift"; sourceTree = "<group>"; };
 		61C43FC824A3C0B000D0473F /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
 		61C43FCA24A3C0C400D0473F /* Class+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Codable.swift"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			children = (
 				51BCABA7249DAF44004234A5 /* HomePageViewController.swift */,
 				51E5CF4324A2E89C005CDCE8 /* DefinedSearchViewController.swift */,
+				51E5CF4524A596A5005CDCE8 /* ClassesTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			children = (
 				51E5CF3924A1A560005CDCE8 /* ClassSearchCollectionViewCell.swift */,
 				51E5CF3F24A1AE93005CDCE8 /* ClassSearchCollectionViewController.swift */,
+				51E5CF4724A596BD005CDCE8 /* ClassesTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -524,8 +528,10 @@
 				C92971AF24A586720038E8A7 /* URLSessionProtocol.swift in Sources */,
 				61C43FC724A3C09B00D0473F /* Class+Convenience.swift in Sources */,
 				51E5CF4424A2E89C005CDCE8 /* DefinedSearchViewController.swift in Sources */,
+				51E5CF4824A596BD005CDCE8 /* ClassesTableViewCell.swift in Sources */,
 				61C43FCB24A3C0C400D0473F /* Class+Codable.swift in Sources */,
 				C929719A24A192520038E8A7 /* NetworkController.swift in Sources */,
+				51E5CF4624A596A5005CDCE8 /* ClassesTableViewController.swift in Sources */,
 				C929717C249B140C0038E8A7 /* ClientSignUpViewController.swift in Sources */,
 				C9297184249C48FF0038E8A7 /* Color+Extension.swift in Sources */,
 				51BCABA8249DAF44004234A5 /* HomePageViewController.swift in Sources */,
@@ -538,7 +544,6 @@
 				C929715B249B07970038E8A7 /* SceneDelegate.swift in Sources */,
 				C9297163249B07970038E8A7 /* AnywhereFitness.xcdatamodeld in Sources */,
 				C92971B324A588E80038E8A7 /* MockURLSession.swift in Sources */,
-				51BCABA6249DAF34004234A5 /* ClassSearchViewController.swift in Sources */,
 				61C43FC924A3C0B000D0473F /* ClassRepresentation.swift in Sources */,
 				C929718C24A033250038E8A7 /* ClientRepresentation.swift in Sources */,
 				51E5CF3E24A1A865005CDCE8 /* ClassSearchController.swift in Sources */,
