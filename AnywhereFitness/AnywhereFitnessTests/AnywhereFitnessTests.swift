@@ -52,7 +52,96 @@ class AnywhereFitnessTests: XCTestCase {
         networkController.signUpAsClient(with: client) { (error) in
             clientError = error
         }
-        XCTAssert(clientError != nil)
+        XCTAssert(clientError == nil)
+    }
+
+    func testGetClient() {
+        let client = Client(name: "Matt", email: "matt@gmail.com", password: "password")
+
+        networkController.signUpAsClient(with: client) { (error) in
+            XCTAssert(error == nil)
+            XCTAssert(client.name == "Matt")
+        }
+    }
+
+    func testGetClientPassword() {
+        let client = Client(name: "Matt", email: "matt@gmail.com", password: "password")
+
+        networkController.signUpAsClient(with: client) { (error) in
+            XCTAssert(error == nil)
+        }
+        XCTAssert(client.password == "password")
+    }
+
+    func testGetClientEmail() {
+        let client = Client(name: "Matt", email: "matt@gmail.com", password: "password")
+
+        networkController.signUpAsClient(with: client) { (error) in
+            XCTAssert(error == nil)
+        }
+        XCTAssert(client.email == "matt@gmail.com")
+    }
+
+    func testInstructorSignUp() {
+        var networkError: Error?
+
+        let instructor = Instructor(name: "Mr. Matt",
+                                    email: "instructor@gmail.com",
+                                    password: "password",
+                                    roleID: "123")
+
+        networkController.signUpAsInstructor(with: instructor) { (error) in
+            networkError = error
+        }
+        XCTAssert(networkError == nil)
+    }
+
+    func testGetInstructor() {
+        let instructor = Instructor(name: "Mr. Matt",
+                                    email: "instructor@gmail.com",
+                                    password: "password",
+                                    roleID: "123")
+
+        networkController.signUpAsInstructor(with: instructor) { (error) in
+            XCTAssert(error == nil)
+        }
+        XCTAssert(instructor.name == "Mr. Matt")
+    }
+
+    func testInstructorPassword() {
+        let instructor = Instructor(name: "Mr. Matt",
+                                    email: "instructor@gmail.com",
+                                    password: "password",
+                                    roleID: "123")
+
+        networkController.signUpAsInstructor(with: instructor) { (error) in
+            XCTAssert(error == nil)
+        }
+        XCTAssert(instructor.password == "password")
+    }
+
+    func testInstructorEmail() {
+        let instructor = Instructor(name: "Mr. Matt",
+                                    email: "instructor@gmail.com",
+                                    password: "password",
+                                    roleID: "123")
+
+        networkController.signUpAsInstructor(with: instructor) { (error) in
+            XCTAssert(error == nil)
+        }
+        XCTAssert(instructor.email == "instructor@gmail.com")
+    }
+
+    func testInstructorRoleID() {
+        let instructor = Instructor(name: "Mr. Matt",
+                                    email: "instructor@gmail.com",
+                                    password: "password",
+                                    roleID: "123")
+
+        networkController.signUpAsInstructor(with: instructor) { (error) in
+            XCTAssert(error == nil)
+        }
+        XCTAssert(instructor.roleID == "123")
     }
 
 }
