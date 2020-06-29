@@ -13,7 +13,7 @@ struct ClassSearch {
     var image: UIImage
     var className: String
     var checked: Bool
-    
+
     init(className: String, imageName: String, checked: Bool = false) {
         self.className = className
         self.image = UIImage(named: imageName)!

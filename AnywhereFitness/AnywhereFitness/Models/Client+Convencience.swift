@@ -15,31 +15,31 @@ extension Client {
         email: String,
         password: String,
         context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
-        
+
         self.init(context: context)
-        
+
         self.name = name
         self.email = email
         self.password = password
     }
-    
+
     @discardableResult convenience init?(clientRepresentation: ClientRepresentation,
-                                        context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
-        
+                                         context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
+
         self.init(name: clientRepresentation.name,
                   email: clientRepresentation.email,
                   password: clientRepresentation.password,
                   context: context)
     }
-    
+
     var clientRepresentation: ClientRepresentation? {
         guard let name = name,
             let email = email,
             let password = password else { return nil}
-        
+
         return ClientRepresentation(name: name,
                                     email: email,
                                     password: password)
     }
-    
+
 }
