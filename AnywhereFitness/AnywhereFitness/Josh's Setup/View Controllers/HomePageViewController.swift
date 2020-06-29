@@ -37,7 +37,10 @@ class HomePageViewController: UIViewController {
      */
 
     @IBAction func logOutButtonTapped(_ sender: UIBarButtonItem) {
-        #warning("implement log out feature")
+        let defaults = UserDefaults.standard
+        defaults.set(nil, forKey: "Token")
+        defaults.set(nil, forKey: "RoleID")
+        self.dismiss(animated: true, completion: nil)
     }
 
 }
