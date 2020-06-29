@@ -53,11 +53,20 @@
 		C92971B324A588E80038E8A7 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92971B224A588E80038E8A7 /* MockURLSession.swift */; };
 		C92971B624A58E2C0038E8A7 /* autocorrect.yml in Resources */ = {isa = PBXBuildFile; fileRef = C92971B424A58E2C0038E8A7 /* autocorrect.yml */; };
 		C92971B724A58E2C0038E8A7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C92971B524A58E2C0038E8A7 /* .swiftlint.yml */; };
+		C92971C724A9802F0038E8A7 /* AnywhereFitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92971C624A9802F0038E8A7 /* AnywhereFitnessUITests.swift */; };
+		C92971CF24A983FF0038E8A7 /* InstructorHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92971CE24A983FF0038E8A7 /* InstructorHomePageViewController.swift */; };
 		D358010461941BE8E060F204 /* Pods_AnywhereFitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84E6667AAF2B99DA04D60B1 /* Pods_AnywhereFitness.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		C92971A824A43F4B0038E8A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C929714D249B07970038E8A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9297154249B07970038E8A7;
+			remoteInfo = AnywhereFitness;
+		};
+		C92971C924A9802F0038E8A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C929714D249B07970038E8A7 /* Project object */;
 			proxyType = 1;
@@ -120,6 +129,10 @@
 		C92971B224A588E80038E8A7 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockURLSession.swift; path = AnywhereFitness/Models/MockURLSession.swift; sourceTree = SOURCE_ROOT; };
 		C92971B424A58E2C0038E8A7 /* autocorrect.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = autocorrect.yml; sourceTree = "<group>"; };
 		C92971B524A58E2C0038E8A7 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C92971C424A9802F0038E8A7 /* AnywhereFitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnywhereFitnessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92971C624A9802F0038E8A7 /* AnywhereFitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnywhereFitnessUITests.swift; sourceTree = "<group>"; };
+		C92971C824A9802F0038E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C92971CE24A983FF0038E8A7 /* InstructorHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorHomePageViewController.swift; sourceTree = "<group>"; };
 		D84E6667AAF2B99DA04D60B1 /* Pods_AnywhereFitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15B1BE69C5E11803EB9F622 /* Pods-AnywhereFitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness.debug.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness/Pods-AnywhereFitness.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +151,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				01625438F7766891A39125DE /* Pods_AnywhereFitnessTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92971C124A9802F0038E8A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +248,7 @@
 			children = (
 				C9297157249B07970038E8A7 /* AnywhereFitness */,
 				C92971A424A43F4B0038E8A7 /* AnywhereFitnessTests */,
+				C92971C524A9802F0038E8A7 /* AnywhereFitnessUITests */,
 				C9297156249B07970038E8A7 /* Products */,
 				264F75A55EE0E8BD9492D653 /* Pods */,
 				7B3982D429A97AA7337C16AC /* Frameworks */,
@@ -239,6 +260,7 @@
 			children = (
 				C9297155249B07970038E8A7 /* AnywhereFitness.app */,
 				C92971A324A43F4B0038E8A7 /* AnywhereFitnessTests.xctest */,
+				C92971C424A9802F0038E8A7 /* AnywhereFitnessUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,6 +289,7 @@
 				C9297179249B13FF0038E8A7 /* InstructorSignUpViewController.swift */,
 				C9297177249B13090038E8A7 /* LandingPageViewController.swift */,
 				61C43FCC24A3E28D00D0473F /* CreateClassViewController.swift */,
+				C92971CE24A983FF0038E8A7 /* InstructorHomePageViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -349,6 +372,15 @@
 			path = TestFiles;
 			sourceTree = "<group>";
 		};
+		C92971C524A9802F0038E8A7 /* AnywhereFitnessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C92971C624A9802F0038E8A7 /* AnywhereFitnessUITests.swift */,
+				C92971C824A9802F0038E8A7 /* Info.plist */,
+			);
+			path = AnywhereFitnessUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -390,6 +422,24 @@
 			productReference = C92971A324A43F4B0038E8A7 /* AnywhereFitnessTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C92971C324A9802F0038E8A7 /* AnywhereFitnessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C92971CD24A9802F0038E8A7 /* Build configuration list for PBXNativeTarget "AnywhereFitnessUITests" */;
+			buildPhases = (
+				C92971C024A9802F0038E8A7 /* Sources */,
+				C92971C124A9802F0038E8A7 /* Frameworks */,
+				C92971C224A9802F0038E8A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C92971CA24A9802F0038E8A7 /* PBXTargetDependency */,
+			);
+			name = AnywhereFitnessUITests;
+			productName = AnywhereFitnessUITests;
+			productReference = C92971C424A9802F0038E8A7 /* AnywhereFitnessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -404,6 +454,10 @@
 						CreatedOnToolsVersion = 11.4.1;
 					};
 					C92971A224A43F4B0038E8A7 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = C9297154249B07970038E8A7;
+					};
+					C92971C324A9802F0038E8A7 = {
 						CreatedOnToolsVersion = 11.4.1;
 						TestTargetID = C9297154249B07970038E8A7;
 					};
@@ -424,6 +478,7 @@
 			targets = (
 				C9297154249B07970038E8A7 /* AnywhereFitness */,
 				C92971A224A43F4B0038E8A7 /* AnywhereFitnessTests */,
+				C92971C324A9802F0038E8A7 /* AnywhereFitnessUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -448,6 +503,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C92971A124A43F4B0038E8A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92971C224A9802F0038E8A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -536,6 +598,7 @@
 				C9297184249C48FF0038E8A7 /* Color+Extension.swift in Sources */,
 				51BCABA8249DAF44004234A5 /* HomePageViewController.swift in Sources */,
 				C9297159249B07970038E8A7 /* AppDelegate.swift in Sources */,
+				C92971CF24A983FF0038E8A7 /* InstructorHomePageViewController.swift in Sources */,
 				C929718E24A035E80038E8A7 /* InstructorRepresentation.swift in Sources */,
 				C929719024A036530038E8A7 /* Instructor+Convenience.swift in Sources */,
 				C929719224A0384E0038E8A7 /* Client+Codable.swift in Sources */,
@@ -569,6 +632,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C92971C024A9802F0038E8A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92971C724A9802F0038E8A7 /* AnywhereFitnessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -576,6 +647,11 @@
 			isa = PBXTargetDependency;
 			target = C9297154249B07970038E8A7 /* AnywhereFitness */;
 			targetProxy = C92971A824A43F4B0038E8A7 /* PBXContainerItemProxy */;
+		};
+		C92971CA24A9802F0038E8A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9297154249B07970038E8A7 /* AnywhereFitness */;
+			targetProxy = C92971C924A9802F0038E8A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -791,6 +867,42 @@
 			};
 			name = Release;
 		};
+		C92971CB24A9802F0038E8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnywhereFitnessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattmartindale.AnywhereFitnessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AnywhereFitness;
+			};
+			name = Debug;
+		};
+		C92971CC24A9802F0038E8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnywhereFitnessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattmartindale.AnywhereFitnessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AnywhereFitness;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -817,6 +929,15 @@
 			buildConfigurations = (
 				C92971AA24A43F4B0038E8A7 /* Debug */,
 				C92971AB24A43F4B0038E8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C92971CD24A9802F0038E8A7 /* Build configuration list for PBXNativeTarget "AnywhereFitnessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92971CB24A9802F0038E8A7 /* Debug */,
+				C92971CC24A9802F0038E8A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -38,6 +38,16 @@
                ReferencedContainer = "container:AnywhereFitness.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C92971C324A9802F0038E8A7"
+               BuildableName = "AnywhereFitnessUITests.xctest"
+               BlueprintName = "AnywhereFitnessUITests"
+               ReferencedContainer = "container:AnywhereFitness.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
