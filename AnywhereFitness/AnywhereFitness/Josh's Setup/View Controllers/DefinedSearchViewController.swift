@@ -33,7 +33,7 @@ class DefinedSearchViewController: UIViewController {
         super.viewDidLoad()
         updateViews()
     }
-    
+
     @IBAction func maleButtonTapped(_ sender: UIButton) {
         guard var classSearch = classSearch else { return }
 

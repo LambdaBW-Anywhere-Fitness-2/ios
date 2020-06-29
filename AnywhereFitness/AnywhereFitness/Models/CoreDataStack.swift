@@ -11,7 +11,7 @@ import CoreData
 
 class CoreDataStack {
     static let shared = CoreDataStack()
-    
+
     lazy var container: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "AnywhereFitness")
         container.loadPersistentStores { (_, error) in
@@ -22,15 +22,15 @@ class CoreDataStack {
         container.viewContext.automaticallyMergesChangesFromParent = true
         return container
     }()
-    
-    var mainContext: NSManagedObjectContext  {
+
+    var mainContext: NSManagedObjectContext {
         return container.viewContext
     }
-    
+
     // This lets us save any context on the right thread, avoiding concurrency issues.
     func save(context: NSManagedObjectContext = CoreDataStack.shared.mainContext) throws {
         var error: Error?
-        
+
         context.performAndWait {
             do {
                 try context.save()
@@ -42,5 +42,5 @@ class CoreDataStack {
             throw error
         }
     }
-    
+
 }

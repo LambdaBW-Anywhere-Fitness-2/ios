@@ -11,7 +11,7 @@ import Foundation
 extension FitnessClass: Encodable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        
+
         try container.encode(name, forKey: .name)
         try container.encode(type, forKey: .type)
         try container.encode(startTime, forKey: .startTime)
@@ -22,7 +22,7 @@ extension FitnessClass: Encodable {
         try container.encode(numOfAttendees, forKey: .numOfAttendees)
         try container.encode(maxClassSize, forKey: .maxClassSize)
     }
-    
+
     enum CodingKeys: String, CodingKey {
         case name = "class_name"
         case type
@@ -34,5 +34,5 @@ extension FitnessClass: Encodable {
         case numOfAttendees = "registered_attendees"
         case maxClassSize = "class_size"
     }
-    
+
 }

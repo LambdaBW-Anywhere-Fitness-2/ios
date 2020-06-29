@@ -11,7 +11,7 @@ import Foundation
 struct Credentials: Codable {
     let token: String
     let roleID: Int
-    
+
     enum CodingKeys: String, CodingKey {
         case token
         case roleID = "role_id"
