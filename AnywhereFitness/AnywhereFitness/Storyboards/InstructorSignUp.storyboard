@@ -18,7 +18,7 @@
                             <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qey-t0-OH9">
                                 <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                                 <items>
-                                    <navigationItem title="Title" id="4SW-Kv-IsA">
+                                    <navigationItem title="Instructor" id="4SW-Kv-IsA">
                                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="a4C-f2-oGE">
                                             <connections>
                                                 <action selector="logOutButtonTapped:" destination="LJs-55-QYJ" id="NeJ-NK-Rdj"/>
