@@ -26,70 +26,74 @@ class AnywhereFitnessUITests: XCTestCase {
         app.launch()
         app.textFields["email"].tap()
 
-        let cKey = app/*@START_MENU_TOKEN@*/.keys["c"]/*[[".keyboards.keys[\"c\"]",".keys[\"c\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let cKey = app.keys["c"]
         cKey.tap()
 
-        let lKey = app/*@START_MENU_TOKEN@*/.keys["l"]/*[[".keyboards.keys[\"l\"]",".keys[\"l\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let lKey = app.keys["l"]
         lKey.tap()
 
-        let iKey = app/*@START_MENU_TOKEN@*/.keys["i"]/*[[".keyboards.keys[\"i\"]",".keys[\"i\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let iKey = app.keys["i"]
         iKey.tap()
 
-        let eKey = app/*@START_MENU_TOKEN@*/.keys["e"]/*[[".keyboards.keys[\"e\"]",".keys[\"e\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let eKey = app.keys["e"]
         eKey.tap()
 
-        let nKey = app/*@START_MENU_TOKEN@*/.keys["n"]/*[[".keyboards.keys[\"n\"]",".keys[\"n\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let nKey = app.keys["n"]
         nKey.tap()
 
-        let tKey = app/*@START_MENU_TOKEN@*/.keys["t"]/*[[".keyboards.keys[\"t\"]",".keys[\"t\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let tKey = app.keys["t"]
         tKey.tap()
 
         let moreKey = app.keys["more"]
         moreKey.tap()
 
-        let key = app/*@START_MENU_TOKEN@*/.keys["@"]/*[[".keyboards.keys[\"@\"]",".keys[\"@\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let key = app.keys["@"]
         key.tap()
 
-        let moreKey2 = app/*@START_MENU_TOKEN@*/.keys["more"]/*[[".keyboards",".keys[\"letters\"]",".keys[\"more\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+        let moreKey2 = app.keys["more"]
         moreKey2.tap()
 
-        let yKey = app/*@START_MENU_TOKEN@*/.keys["y"]/*[[".keyboards.keys[\"y\"]",".keys[\"y\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let yKey = app.keys["y"]
         yKey.tap()
 
-        let aKey = app/*@START_MENU_TOKEN@*/.keys["a"]/*[[".keyboards.keys[\"a\"]",".keys[\"a\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let aKey = app.keys["a"]
         aKey.tap()
 
-        let hKey = app/*@START_MENU_TOKEN@*/.keys["h"]/*[[".keyboards.keys[\"h\"]",".keys[\"h\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let hKey = app.keys["h"]
         hKey.tap()
 
-        let oKey = app/*@START_MENU_TOKEN@*/.keys["o"]/*[[".keyboards.keys[\"o\"]",".keys[\"o\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let oKey = app.keys["o"]
         oKey.tap()
         oKey.tap()
         moreKey.tap()
 
-        let key2 = app/*@START_MENU_TOKEN@*/.keys["."]/*[[".keyboards.keys[\".\"]",".keys[\".\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let key2 = app.keys["."]
         key2.tap()
         moreKey2.tap()
         cKey.tap()
         oKey.tap()
 
-        let mKey = app/*@START_MENU_TOKEN@*/.keys["m"]/*[[".keyboards.keys[\"m\"]",".keys[\"m\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let mKey = app.keys["m"]
         mKey.tap()
 
-        let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"return\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+        let returnButton = app.buttons["Return"]
         returnButton.tap()
 
-        let pKey = app/*@START_MENU_TOKEN@*/.keys["p"]/*[[".keyboards.keys[\"p\"]",".keys[\"p\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let pKey = app.keys["p"]
+        pKey.tap()
         aKey.tap()
-        let sKey = app/*@START_MENU_TOKEN@*/.keys["s"]/*[[".keyboards.keys[\"s\"]",".keys[\"s\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let sKey = app.keys["s"]
         sKey.tap()
         sKey.tap()
-        let wKey = app/*@START_MENU_TOKEN@*/.keys["w"]/*[[".keyboards.keys[\"w\"]",".keys[\"w\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let wKey = app.keys["w"]
+        wKey.tap()
         oKey.tap()
-        let rKey = app/*@START_MENU_TOKEN@*/.keys["r"]/*[[".keyboards.keys[\"r\"]",".keys[\"r\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        let dKey = app/*@START_MENU_TOKEN@*/.keys["d"]/*[[".keyboards.keys[\"d\"]",".keys[\"d\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let rKey = app.keys["r"]
+        rKey.tap()
+        let dKey = app.keys["d"]
+        dKey.tap()
 
-        let logInStaticText = app/*@START_MENU_TOKEN@*/.staticTexts["Log In"]/*[[".buttons[\"Log In\"].staticTexts[\"Log In\"]",".staticTexts[\"Log In\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let logInStaticText = app.staticTexts["Log In"]
         returnButton.tap()
         logInStaticText.tap()
 
@@ -114,78 +118,78 @@ class AnywhereFitnessUITests: XCTestCase {
         app2.launch()
         app2.textFields["email"].tap()
 
-        let iKey = app2/*@START_MENU_TOKEN@*/.keys["i"]/*[[".keyboards.keys[\"i\"]",".keys[\"i\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let iKey = app2.keys["i"]
         iKey.tap()
 
-        let nKey = app2/*@START_MENU_TOKEN@*/.keys["n"]/*[[".keyboards.keys[\"n\"]",".keys[\"n\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let nKey = app2.keys["n"]
         nKey.tap()
 
-        let sKey = app2/*@START_MENU_TOKEN@*/.keys["s"]/*[[".keyboards.keys[\"s\"]",".keys[\"s\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let sKey = app2.keys["s"]
         sKey.tap()
 
-        let tKey = app2/*@START_MENU_TOKEN@*/.keys["t"]/*[[".keyboards.keys[\"t\"]",".keys[\"t\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let tKey = app2.keys["t"]
         tKey.tap()
 
-        let rKey = app2/*@START_MENU_TOKEN@*/.keys["r"]/*[[".keyboards.keys[\"r\"]",".keys[\"r\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let rKey = app2.keys["r"]
         rKey.tap()
 
-        let uKey = app2/*@START_MENU_TOKEN@*/.keys["u"]/*[[".keyboards.keys[\"u\"]",".keys[\"u\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let uKey = app2.keys["u"]
         uKey.tap()
 
-        let cKey = app2/*@START_MENU_TOKEN@*/.keys["c"]/*[[".keyboards.keys[\"c\"]",".keys[\"c\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let cKey = app2.keys["c"]
         cKey.tap()
         tKey.tap()
 
-        let oKey = app2/*@START_MENU_TOKEN@*/.keys["o"]/*[[".keyboards.keys[\"o\"]",".keys[\"o\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let oKey = app2.keys["o"]
         oKey.tap()
         rKey.tap()
 
-        let moreKey = app2/*@START_MENU_TOKEN@*/.keys["more"]/*[[".keyboards",".keys[\"numbers\"]",".keys[\"more\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+        let moreKey = app2.keys["more"]
         moreKey.tap()
 
-        let key = app2/*@START_MENU_TOKEN@*/.keys["@"]/*[[".keyboards.keys[\"@\"]",".keys[\"@\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let key = app2.keys["@"]
         key.tap()
 
-        let moreKey2 = app2/*@START_MENU_TOKEN@*/.keys["more"]/*[[".keyboards",".keys[\"letters\"]",".keys[\"more\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+        let moreKey2 = app2.keys["more"]
         moreKey2.tap()
 
-        let yKey = app2/*@START_MENU_TOKEN@*/.keys["y"]/*[[".keyboards.keys[\"y\"]",".keys[\"y\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let yKey = app2.keys["y"]
         yKey.tap()
 
-        let aKey = app2/*@START_MENU_TOKEN@*/.keys["a"]/*[[".keyboards.keys[\"a\"]",".keys[\"a\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let aKey = app2.keys["a"]
         aKey.tap()
 
-        let hKey = app2/*@START_MENU_TOKEN@*/.keys["h"]/*[[".keyboards.keys[\"h\"]",".keys[\"h\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let hKey = app2.keys["h"]
         hKey.tap()
         oKey.tap()
         oKey.tap()
         moreKey.tap()
 
-        let key2 = app2/*@START_MENU_TOKEN@*/.keys["."]/*[[".keyboards.keys[\".\"]",".keys[\".\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let key2 = app2.keys["."]
         key2.tap()
         moreKey2.tap()
         cKey.tap()
         oKey.tap()
 
-        let mKey = app2/*@START_MENU_TOKEN@*/.keys["m"]/*[[".keyboards.keys[\"m\"]",".keys[\"m\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let mKey = app2.keys["m"]
         mKey.tap()
         app.textFields["password"].tap()
 
-        let pKey = app2/*@START_MENU_TOKEN@*/.keys["p"]/*[[".keyboards.keys[\"p\"]",".keys[\"p\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let pKey = app2.keys["p"]
         pKey.tap()
         aKey.tap()
         sKey.tap()
         sKey.tap()
 
-        let wKey = app2/*@START_MENU_TOKEN@*/.keys["w"]/*[[".keyboards.keys[\"w\"]",".keys[\"w\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let wKey = app2.keys["w"]
         wKey.tap()
         oKey.tap()
         rKey.tap()
 
-        let dKey = app2/*@START_MENU_TOKEN@*/.keys["d"]/*[[".keyboards.keys[\"d\"]",".keys[\"d\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let dKey = app2.keys["d"]
         dKey.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"return\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app2/*@START_MENU_TOKEN@*/.staticTexts["Log In"]/*[[".buttons[\"Log In\"].staticTexts[\"Log In\"]",".staticTexts[\"Log In\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app2.buttons["Return"].tap()
+        app2.staticTexts["Log In"].tap()
         let instructorTitle = app.navigationBars["Instructor"].staticTexts["Instructor"]
 
         XCTAssert(instructorTitle.label == "Instructor")
@@ -206,13 +210,14 @@ class AnywhereFitnessUITests: XCTestCase {
         app.launch()
         app.staticTexts["For Instructors"].tap()
 
-        let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"return\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+        let returnButton = app.buttons["Return"]
         returnButton.tap()
         returnButton.tap()
         returnButton.tap()
         returnButton.tap()
-        app/*@START_MENU_TOKEN@*/.staticTexts["Confirm"]/*[[".buttons[\"Confirm\"].staticTexts[\"Confirm\"]",".staticTexts[\"Confirm\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        let alertTitle = app.alerts["Missing some information..."].scrollViews.otherElements.staticTexts["Missing some information..."]
+        app.staticTexts["Confirm"].tap()
+        let text = "Missing some information..."
+        let alertTitle = app.alerts[text].scrollViews.otherElements.staticTexts[text]
         XCTAssert(alertTitle.label == "Missing some information...")
     }
 }

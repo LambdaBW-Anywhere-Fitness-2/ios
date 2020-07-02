@@ -29,7 +29,7 @@ class CreateClassViewController: UIViewController {
             !type.isEmpty,
             let startTime = startTextField.text,
             !startTime.isEmpty,
-            let startDate = startTextField.text,
+//            let startDate = startTextField.text,
             let durationString = durationTextField.text,
             !durationString.isEmpty,
             let duration = Int64(durationString),
@@ -40,7 +40,6 @@ class CreateClassViewController: UIViewController {
             let maxClassSize = Int64(maxClassSizeString)
         else { return }
 
-        // TODO: - Get dates from date and time picker
         let fitnessClass = FitnessClass(name: name,
         type: ClassType(rawValue: type)!,
         startTime: Date(),
